@@ -1,0 +1,27 @@
+/*doc
+---
+title: fadeInDown
+name: animate-fadeInDown
+parent: animate.css
+---
+```html_example_table
+<svg class="icon animated fadeInDown infinite" role="presentation">
+	<use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use>
+</svg>
+```
+*/
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}

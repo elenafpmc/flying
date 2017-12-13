@@ -1,0 +1,137 @@
+.form-group {
+	position: relative;
+	label {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		margin: 0;
+
+		color: $color-black;
+		font-family: $font-family-base;
+		font-size: 1.2rem; line-height: 3rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		opacity: .5;
+		transition: all 0.3s ease-out 0s;
+
+		pointer-events: none;
+
+		&.focus {
+			opacity: 1;
+			top: 10px;
+
+			& + .form-control:not(textarea) {
+				padding: 35px 20px 5px 20px;
+			}
+			& + textarea.form-control {
+				padding: 40px 20px 5px 20px;
+			}
+		}
+	}
+	.form-control {
+		background-color: $color-grey-form;
+		border: 0;
+		border-radius: 3px;
+		height: 70px;
+		padding: 20px;
+
+		color: $color-black;
+		font-family: $font-family-base;
+		font-size: 1.6rem; line-height: 3rem;
+		font-weight: 400;
+	}
+
+	textarea.form-control {
+		min-height: 150px;
+		line-height: normal;
+	}
+
+	.btn {
+		display: inline-block;
+		margin: 0;
+		padding: 20px 30px;
+		color: $color-black;
+		font-family: $font-family-base;
+		font-size: 1.2rem; line-height: 3rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		background-color: $color-grey-form;
+		border: none;
+		border-radius: 3px;
+		outline: none !important;
+		cursor: pointer;
+
+		&.disabled,
+		&[disabled] {
+			opacity: 0.5;
+			pointer-events: none;
+			cursor: not-allowed;
+		}
+
+		&-block {
+			display: block;
+			width: 100%;
+		}
+		&-primary {
+			background-color: $color-primary;
+			color: $color-white;
+		}
+		&-pink {
+			background-color: $color-pink;
+			color: $color-white;
+		}
+		&-pink-dark {
+			background-color: $color-pink-dark;
+			color: $color-white;
+		}
+		&-blue-dark {
+			background-color: $color-blue-dark;
+			color: $color-white;
+		}
+		&-blue-darkest {
+			background-color: $color-blue-darkest;
+			color: $color-white;
+		}
+		&-green {
+			background-color: $color-green;
+			color: $color-white;
+		}
+		&-green-dark {
+			background-color: $color-green-dark;
+			color: $color-white;
+		}
+		&-yellow {
+			background-color: $color-yellow;
+			color: $color-white;
+		}
+		&-yellow-dark {
+			background-color: $color-yellow-dark;
+			color: $color-white;
+		}
+		&-purple {
+			background-color: $color-purple;
+			color: $color-white;
+		}
+		&-purple-dark {
+			background-color: $color-purple-dark;
+			color: $color-white;
+		}
+	}
+}
+
+.error-label {
+	display: block;
+	color: rgb(220, 50, 50);
+	font-size: 1.4rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+}
+input[name='recaptchaHidden'] {
+	display: block;
+	height: 1px;
+	width: 1px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	opacity: 0;
+}

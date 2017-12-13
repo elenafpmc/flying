@@ -1,0 +1,31 @@
+.footer {
+	height: 90px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	ul.rrss {
+		margin: 0;
+		padding: 0;
+		float: right;
+		li {
+			display: inline-block;
+			margin: 0;
+			padding: 3px 0;
+			a {
+				display: block;
+				background-color: transparent;
+				border: none;
+				padding: 5px;
+				outline: none !important;
+				cursor: pointer;
+				.icon {
+					display: block;
+					height: 23px;
+					width: 23px;
+				}
+			}
+			&:before {
+				display: none;
+			}
+		}
+	}
+}

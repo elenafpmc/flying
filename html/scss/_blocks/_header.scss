@@ -1,0 +1,64 @@
+.header {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 83px;
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	transition: 0.3s ease-out 0s;
+	z-index: 1000;
+
+	&--light {
+		background-color: transparent !important;
+	}
+	&--primary {
+		background-color: $color-primary;
+	}
+	&--placehold + main {
+		margin-top: 90px;
+	}
+
+	.navbar-brand {
+		padding: 0;
+		margin: 0;
+	}
+
+	button.navbar-toggle {
+		display: block;
+		position: relative;
+		margin: 0;
+		padding: 4px;
+		border: 0;
+		border-radius: 0px;
+		background-color: transparent;
+		float: right;
+		outline: none !important;
+		cursor: pointer;
+
+		.icon-bar {
+			display: block;
+			position: relative;
+			height: 4px;
+			background: $color-white;
+			width: 30px;
+			transition: all 0.5s ease-out 0s;
+
+			& + .icon-bar {
+				margin-top: 6px;
+			}
+
+			&:nth-child(1){
+				transform-origin: 0% 0%;
+			}
+			&:nth-child(2){
+
+			}
+			&:nth-child(3){
+				transform-origin: 0% 100%;
+			}
+		}
+	}
+}

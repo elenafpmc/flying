@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_009</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_009">
+            <rect id="container" x="0" y="0" width="32" height="32"></rect>
+            <g id="Page-1" transform="translate(1.000000, 4.000000)" fill="#000000">
+                <path d="M0,25 L30,25 L30,3 L0,3 L0,25 Z M2,23 L28,23 L28,5 L2,5 L2,23 Z" id="Fill-1"></path>
+                <polygon id="Fill-2" points="0 11 30 11 30 9 0 9"></polygon>
+                <polygon id="Fill-3" points="9 16 22 16 22 14 9 14"></polygon>
+                <polygon id="Fill-4" points="9 21 22 21 22 19 9 19"></polygon>
+                <polygon id="Fill-5" points="24 6 26 6 26 0 24 0"></polygon>
+                <polygon id="Fill-6" points="20 6 22 6 22 0 20 0"></polygon>
+                <polygon id="Fill-7" points="3 6 5 6 5 0 3 0"></polygon>
+                <polygon id="Fill-8" points="7 6 9 6 9 0 7 0"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

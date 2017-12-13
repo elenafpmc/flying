@@ -1,0 +1,196 @@
+/* Estilos CSS globales */
+
+/* reset*/
+
+ul	{
+	padding-left: 0;
+}
+
+
+/* Colores */
+.bg-body{
+	background: #F8F8F8;
+}
+
+.bg-primary	{
+	background:#0BADFF;
+}
+.bg-white{
+	background: #ffffff;
+}
+
+/* Textos */
+
+.h1{
+	font-size: 32px;
+}
+.h1-hiper{
+	color: #0badff;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+.h2{
+	font-size: 28px;
+	font-weight: 200;
+}
+p{
+	font-size: 14px;
+	color:#979899;
+
+}
+
+.text-content{
+	line-height: 22px;
+
+}
+span.text-content{
+	color:#979899;
+	line-height:normal;
+	 
+}
+.text-small{
+	font-size: 10px;
+}
+.text-medium{
+	font-size: 12px;
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-color-white{
+	color:#ffffff;
+}
+.text-color-primary{
+	color:#0BADFF;
+	
+}
+/* Botones */
+
+
+.btn{
+	border-radius: 40px;	
+}
+
+.btn-secondary{
+	background: #D72A6B;
+	color:#ffffff;
+}
+
+
+
+/* Listados */
+
+
+.list-inline li{
+	display: inline-block;
+}
+.list-inline li{
+	margin-left: 10px;
+	margin-right: 10px;
+	list-style: none;
+}
+/* Márgenes - Paddings*/
+.margin-t-0{
+	margin-top: 0px;
+}
+.margin-b-25{
+	margin-bottom: 25px;
+}
+.margin-b-50{
+	margin-bottom: 50px;
+}
+.padding-sides-35{
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.padding-sides-50{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+.padding-sides-50{
+	padding-left: 50px;
+	padding-right: 50px;	
+} 
+.padding-tops-15{
+	padding-top: 15px;
+	padding-bottom: 15px;		
+}
+
+.padding-tops-25{
+	padding-top: 25px;
+	padding-bottom: 25px;	
+}
+.padding-tops-25{
+	padding-top: 50px;
+	padding-bottom: 50px;	
+}
+.padding-5	{
+	padding:5px;
+}
+.padding-15	{
+	padding:15px;
+}
+.padding-25	{
+	padding:25px;
+}
+.padding-50	{
+	padding:50px;
+}
+.padding-35	{
+	padding:35px;
+}
+.padding-t-0{
+	padding-top:0px;
+	
+}
+.padding-b-0{
+	padding-bottom:0px!important;
+}
+/* Bloques */
+.table-top-block{
+	width: 100%;
+	max-width: 600px;
+}
+
+.main-block{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+
+
+/*Helpers*/
+
+.no-decoration{
+	text-decoration: none;
+}
+
+.shadow	{
+	border-bottom: 4px solid #2298D6;
+}
+
+
+
+
+/*Custom*/
+
+.appleLinksWhite a{color:#ffffff!important; text-decoration: none;}	
+
+.icons-social{
+	margin-bottom: 25px;
+}
+.icons-social a{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.img-responsive{
+	width: 100%;
+}

@@ -1,0 +1,96 @@
+/* ==========================================================
+ * search.scss
+ * Search field and autocomplete styles
+ *
+ * Author: Yann Gouffon, hello@yago.io
+ *
+ * Copyright 2014 Yann Gouffon
+ * Licensed under MIT
+ ========================================================== */
+
+.cortana-search {
+  position: absolute ;
+  right: 25px ;
+  top: 18px ;
+  display: block ;
+  width: 230px ;
+  height: 38px ;
+  box-sizing: border-box ;
+  border-radius: 3px ;
+  border: 1px solid $silver ;
+  box-shadow: none ;
+  padding: 5px 10px 5px 50px ;
+  font-family: $mainFont ;
+  font-size: 14px ;
+  border-box: box-sizing ;
+  &:focus{
+    outline: 0;
+    border: 1px solid $asbestos ;
+  }
+  &::-webkit-input-placeholder {
+    font-style: italic;
+  }
+  &:-moz-placeholder {
+    font-style: italic;
+  }
+  background: url('../img/search-icon.svg') no-repeat 10px 6px ;
+  background: url('../img/search-icon.png') no-repeat 10px 6px \9
+}
+
+@media only screen and (max-width: 767px) {
+  .cortana-search {display: none ;}
+}
+
+/* custom styles for the typeahead */
+
+.cortana-search-wrapper .dropdown-menu {
+  width: 230px ;
+  margin-top: 12px ;
+  background-color: $white ;
+  border-radius: 3px ;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2) ;
+  position: absolute;
+  list-style: none;
+}
+
+.cortana-search-wrapper li {
+  padding: 8px 15px ;
+  font-family: $mainFont ;
+  border-top: 1px solid $silver ;
+  &:first-child {border: none ;}
+}
+
+.cortana-search-wrapper li a {
+  text-decoration: none ;
+  color: $mine ;
+}
+
+.cortana-search-wrapper li.active {
+  a {color: $white ;}
+  background-color: $alizarin ;
+}
+
+.cortana-search-title {
+  font-weight: bold ;
+  font-size: 14px ;
+  margin: 0 ;
+  margin-bottom: 5px ;
+}
+
+.cortana-search-path {
+  font-weight: normal ;
+  font-size: 12px ;
+  margin: 0 ;
+  word-wrap: break-word ;
+  white-space: normal ;
+}
+
+.cortana-search-wrapper .dropdown-menu li a,
+.cortana-search-wrapper .dropdown-menu li a:hover,
+.cortana-search-wrapper .dropdown-menu li a:focus,
+.cortana-search-wrapper .dropdown-menu .active a,
+.cortana-search-wrapper .dropdown-menu .active a:hover,
+.cortana-search-wrapper .dropdown-menu .active a:focus {
+  padding: 0 ;
+  background: transparent ;
+}

@@ -1,0 +1,13 @@
+{
+	"gitName" : "",
+	"scss" : "html/scss",
+	"css" : "html/css",
+	"js" : "html/js",
+	"fonts" : "html/fonts",
+	"svg" : "html/svg",
+	"img" : "html/img",
+	"imgCMS" : "html/img",
+	"theme" : "html/src",
+	"ext" : "html",
+	"app" : "http://localhost/flyingpigs/html/"
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="guaiestilos_01basicos" transform="translate(-390.000000, -5404.000000)" fill="#202020">
+            <g id="formularios" transform="translate(113.000000, 4956.000000)">
+                <g id="provincia" transform="translate(0.000000, 394.000000)">
+                    <g id="flecha" transform="translate(252.000000, 27.000000)">
+                        <g id="icon-arrow_down" transform="translate(24.000000, 24.000000)">
+                            <path d="M9.669,3 L6.001,6.715 L2.332,3 L1,3.937 L6.001,9 L11,3.937 L9.669,3 Z" id="Page-1"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

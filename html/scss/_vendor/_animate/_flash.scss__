@@ -1,0 +1,25 @@
+/*doc
+---
+title: Flash
+name: animate-flash
+parent: animate.css
+---
+```html_example_table
+<svg class="icon animated flash infinite" role="presentation">
+	<use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use>
+</svg>
+```
+*/
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  animation-name: flash;
+}

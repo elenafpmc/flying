@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_011</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_011">
+            <rect id="container" x="0" y="0" width="32" height="32"></rect>
+            <path d="M7,6 L26,6 L26,4 L7,4 L7,6 Z M5,2 L28,2 L28,8 L5,8 L5,2 Z" id="Rectangle-9" fill="#000000" fill-rule="nonzero"></path>
+            <path d="M7,29 L26,29 L26,27 L7,27 L7,29 Z M5,25 L28,25 L28,31 L5,31 L5,25 Z" id="Rectangle-9-Copy" fill="#000000" fill-rule="nonzero"></path>
+            <polygon id="Rectangle-12" fill="#000000" transform="translate(16.463961, 26.363961) rotate(45.000000) translate(-16.463961, -26.363961) " points="11.9639614 21.863961 20.9639614 21.863961 11.9639614 30.863961"></polygon>
+            <polygon id="Rectangle-12-Copy" fill="#000000" transform="translate(16.485534, 11.035534) rotate(45.000000) translate(-16.485534, -11.035534) " points="18.9855337 8.53553391 18.9855337 13.5355339 13.9855337 13.5355339"></polygon>
+            <path d="M8,27 L8,21 C8,17.6930342 10.68341,15 13.9935641,15 L19.0064359,15 C22.3062995,15 25,17.6862915 25,21 L25,27 L8,27 Z M14,15 L19,15 L19,17 L14,17 L14,15 Z M23,25 L23,21 C23,18.7944648 21.2053342,17 19.0064359,17 L13.9935641,17 C11.7911327,17 10,18.7944479 10,21 L10,25 L23,25 Z" id="Combined-Shape" fill="#000000"></path>
+            <path d="M8,17 L8,12 C8,8.69303423 10.68341,6 13.9935641,6 L19.0064359,6 C22.3062995,6 25,8.6862915 25,12 L25,17 L8,17 Z M14,6 L19,6 L19,8 L14,8 L14,6 Z M23,15 L23,12 C23,9.79446481 21.2053342,8 19.0064359,8 L13.9935641,8 C11.7911327,8 10,9.79444792 10,12 L10,15 L23,15 Z" id="Combined-Shape-Copy" fill="#000000" transform="translate(16.500000, 11.500000) scale(1, -1) translate(-16.500000, -11.500000) "></path>
+        </g>
+    </g>
+</svg>

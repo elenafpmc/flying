@@ -1,0 +1,28 @@
+/*doc
+---
+title: rotateOutUpRight
+name: animate-rotateOutUpRight
+parent: animate.css
+---
+```html_example_table
+<svg class="icon animated rotateOutUpRight infinite" role="presentation">
+	<use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use>
+</svg>
+```
+*/
+@keyframes rotateOutUpRight {
+  from {
+    transform-origin: right bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, 90deg);
+    opacity: 0;
+  }
+}
+
+.rotateOutUpRight {
+  animation-name: rotateOutUpRight;
+}

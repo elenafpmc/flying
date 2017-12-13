@@ -1,0 +1,683 @@
+.cortana-footer,
+.cortana-header h1 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center
+}
+.cortana-content a,
+.cortana-content blockquote,
+.cortana-content li,
+.cortana-content q,
+.cortana-header h1,
+.cortana-nav h3,
+.cortana-nav li a {
+    text-transform: none
+}
+/*
+.cortana-content p,
+.cortana-content table,
+.cortana-footer,
+.cortana-header h1,
+.cortana-inside-nav a,
+.cortana-nav h3,
+.cortana-nav li a,
+.exampleOutput:after {
+    font-family: "Open Sans", sans-serif
+}
+*/
+.codeBlock pre,
+.cortana-content code,
+.cortana-content pre {
+    word-break: keep-all;
+    word-wrap: normal;
+    white-space: pre
+}
+.cortana-nav li a,
+.cortana-search,
+.exampleOutput {
+    box-sizing: border-box
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBp0EAVxt0G0biEntp43Qt6E.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxp_TkvowlIOtbR7ePgFOpF4.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(http://fonts.gstatic.com/s/sourcecodepro/v6/mrl8jkM18OlOQN8JLgasD9zbP97U9sKh0jjxbPbfOKg.ttf) format('truetype')
+}
+#sb-site,
+.cortana-body {
+    background: #f4f6f9;
+    z-index: auto
+}
+.cortana-header {
+    background: #fff;
+    padding: 21px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid #BDC3C7
+}
+.cortana-header h1 {
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 1.1em
+}
+.cortana-footer,
+.cortana-footer a,
+.exampleOutput:after {
+    color: #7F8C8D
+}
+@media only screen and (max-width: 767px) {
+    .cortana-header h1 {
+        font-size: 20px
+    }
+}
+.cortana-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    border: 1px solid #f4f6f9
+}
+@media only screen and (max-width: 900px) {
+    .cortana-container {
+        padding: 0 10px 50px
+    }
+}
+.cortana-content-wrapper {
+    padding: 15px 0 40px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 100px
+}
+@media only screen and (max-width: 1280px) {
+    .cortana-content-wrapper {
+        margin-top: 20px
+    }
+}
+.exampleOutput {
+    padding: 50px 4%;
+    border: 1px solid #f4f6f9;
+    position: relative;
+    width: 100%;
+    overflow-y: auto
+}
+.exampleOutput:after {
+    content: 'Example';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #f4f6f9;
+    border-bottom: 1px solid #f4f6f9;
+    border-bottom-right-radius: 4px;
+    padding: 5px 8px;
+    display: inline-block
+}
+.cortana-footer {
+    padding-bottom: 50px;
+    font-size: 14px;
+    background: 0 0
+}
+.cortana-footer a:hover {
+    color: #E74C3C
+}
+.cortana-content {
+    font-size: 18px;
+    line-height: 1.6em
+}
+.cortana-content h1,
+.cortana-content h2,
+.cortana-content h3,
+.cortana-content h4,
+.cortana-content h5,
+.cortana-content h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 2em 0 .4em;
+    line-height: 1.2em;
+    padding: 1em 30px .2em;
+    border-top: 1px solid #f4f6f9;
+    color: #333;
+    text-transform: none
+}
+.cortana-content h1 {
+    font-size: 36px
+}
+.cortana-content h2 {
+    font-size: 28px
+}
+@media only screen and (max-width: 900px) {
+    .cortana-content h1,
+    .cortana-content h2,
+    .cortana-content h3,
+    .cortana-content h4,
+    .cortana-content h5,
+    .cortana-content h6 {
+        padding: .4em 10px
+    }
+    .cortana-content h1 {
+        font-size: 28px
+    }
+    .cortana-content h2 {
+        font-size: 23px
+    }
+}
+.cortana-content h3 {
+    font-size: 25px
+}
+@media only screen and (max-width: 900px) {
+    .cortana-content h3 {
+        font-size: 21px
+    }
+}
+@media only screen and (max-width: 900px) {
+    .cortana-content p {
+        padding: 0 10px
+    }
+}
+.cortana-content blockquote,
+.cortana-content q {
+    margin: 30px;
+    border-left: 3px solid #BDC3C7;
+    font-size: 18px
+}
+.cortana-content blockquote p,
+.cortana-content q p {
+    margin: 0;
+    padding: 0
+}
+.cortana-content table {
+    margin: 30px;
+    border-collapse: collapse
+}
+@media only screen and (max-width: 900px) {
+    .cortana-content table {
+        margin: 30px 10px
+    }
+}
+.cortana-content table td,
+.cortana-content table th,
+.cortana-content table tr {
+    padding: 10px 15px;
+    border: 1px solid #ccc
+}
+.cortana-content table th {
+    font-weight: 700;
+    color: #333
+}
+.cortana-content:first-child h1,
+.cortana-content:first-child h2,
+.cortana-content:first-child h3,
+.cortana-content:first-child h4,
+.cortana-content:first-child h5,
+.cortana-content:first-child h6 {
+    margin-top: 0;
+    border: none
+}
+.cortana-menu-btn {
+    width: 28px;
+    height: 28px;
+    margin: 0;
+    position: absolute;
+    left: 25px;
+    top: 20px
+}
+.cortana-menu-btn:hover {
+    cursor: pointer
+}
+.cortana-menu-btn:hover span {
+    background: #333
+}
+.cortana-menu-btn span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 1px;
+    margin: 5px 0;
+    background: #95A5A6;
+    -webkit-transition: background .3s;
+    transition: background .3s
+}
+@media only screen and (max-width: 767px) {
+    .cortana-menu-btn {
+        top: 12px
+    }
+}
+.cortana-sidenav {
+    background: #171d22
+}
+.cortana-nav li a,
+.cortana-nav li a:focus,
+.cortana-nav li a:hover {
+    text-decoration: none;
+    font-size: 16px;
+    background: 0 0
+}
+.cortana-nav {
+    padding: 20px 0 10px;
+    margin: 0
+}
+.cortana-nav li,
+.cortana-nav ul {
+    margin: 0;
+    padding: 0
+}
+.cortana-nav li {
+    list-style-type: none;
+    display: inline;
+    font-style: normal;
+    font-weight: 400
+}
+.cortana-nav li a {
+    display: block;
+    width: 100%;
+    padding: 3px 5%;
+    color: #ECF0F1;
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+.codeBlock .c,
+.codeBlock .c1,
+.codeBlock .cm,
+.codeBlock .cp,
+.codeBlock .cs,
+.codeBlock .ge {
+    font-style: italic
+}
+.cortana-nav li a:focus,
+.cortana-nav li a:hover {
+    color: #E74C3C
+}
+.cortana-nav li a.active {
+    background: #E74C3C;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none
+}
+.cortana-nav h3 {
+    padding: 20px 5% 0;
+    margin: 20px 0 10px;
+    color: #ECF0F1;
+    border-top: 1px solid #364350;
+    font-size: 18px;
+    font-weight: 700
+}
+.cortana-nav h3:first-child {
+    border: none
+}
+.cortana-inside-nav {
+    margin-left: -190px;
+    width: 170px;
+    float: left;
+    margin-top: 100px
+}
+.cortana-inside-nav.cortana-stick-bottom {
+    position: fixed;
+    top: 0;
+    bottom: auto
+}
+.cortana-inside-nav a {
+    color: #333;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    text-decoration: none;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    font-size: 16px;
+    background: 0 0
+}
+.cortana-inside-nav li {
+    list-style-type: none;
+    display: block;
+    margin: 0
+}
+.cortana-inside-nav li a:focus,
+.cortana-inside-nav li a:hover,
+.cortana-inside-nav li.active a {
+    color: #E74C3C;
+    font-size: 16px;
+    background: 0 0;
+    text-decoration: none
+}
+.cortana-inside-nav ul {
+    position: relative;
+    padding: 0;
+    top: -100px;
+    margin-top: 100px
+}
+@media only screen and (max-width: 1280px) {
+    .cortana-inside-nav {
+        float: none;
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 0 30px;
+        position: relative;
+        z-index: 10
+    }
+    .cortana-inside-nav li {
+        display: inline-block;
+        width: 45%
+    }
+    .cortana-inside-nav ul {
+        position: static
+    }
+}
+.codeBlock,
+.codeBlock pre {
+    width: auto;
+    line-height: 1.6em
+}
+.cortana-content code,
+.cortana-content pre {
+    font-family: Monaco, monospace;
+    font-size: 14px;
+    border: 1px solid #BDC3C7;
+    padding: 2px 5px;
+    border-radius: 2px;
+    background: #fff;
+    margin: 0;
+    color: #333
+}
+.codeBlock,
+.codeBlock .highlight,
+.codeBlock pre {
+    background: #1e221d
+}
+.codeBlock {
+    padding: 50px 4%;
+    color: #fff;
+    font-size: 15px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    position: relative
+}
+.codeBlock:after {
+    content: 'HTML';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #7F8C8D;
+    border-right: 1px solid #7F8C8D;
+    border-bottom: 1px solid #7F8C8D;
+    border-bottom-right-radius: 4px;
+    padding: 5px 8px;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif
+}
+.codeBlock.jsExample:after {
+    content: 'JavaScript'
+}
+.codeBlock pre {
+    font-family: Monaco, monospace;
+    margin: 0;
+    padding: 0 0 0 15px;
+    font-size: 14px;
+    position: relative;
+    color: #fff;
+    border: 1px solid #1e221d;
+    overflow: visible
+}
+.cortana-search,
+.cortana-search-wrapper li {
+    font-family: "Open Sans", sans-serif
+}
+@media only screen and (max-width: 900px) {
+    .codeBlock {
+        padding: 50px 10px
+    }
+}
+.codeBlock hll {
+    background-color: #ffc
+}
+.codeBlock .c {
+    color: #998
+}
+.codeBlock .err {
+    color: #a61717
+}
+.codeBlock .k,
+.codeBlock .o {
+    color: #fff
+}
+.codeBlock .cm {
+    color: #998
+}
+.codeBlock .cp {
+    color: #999
+}
+.codeBlock .c1 {
+    color: #998
+}
+.codeBlock .cs {
+    color: #999
+}
+.codeBlock .gd {
+    color: #fff;
+    background-color: #fdd
+}
+.codeBlock .ge {
+    color: #fff
+}
+.codeBlock .gr {
+    color: #a00
+}
+.codeBlock .gh {
+    color: #999
+}
+.codeBlock .gi {
+    color: #fff;
+    background-color: #dfd
+}
+.codeBlock .go {
+    color: #888
+}
+.codeBlock .gp {
+    color: #555
+}
+.codeBlock .gu {
+    color: #aaa
+}
+.codeBlock .gt {
+    color: #a00
+}
+.codeBlock .kc,
+.codeBlock .kd,
+.codeBlock .kn,
+.codeBlock .kp,
+.codeBlock .kr {
+    color: #fff
+}
+.codeBlock .kt {
+    color: #458
+}
+.codeBlock .m {
+    color: #099
+}
+.codeBlock .s {
+    color: #E6DB74
+}
+.codeBlock .na {
+    color: #A6E22E
+}
+.codeBlock .nb {
+    color: #66D9EF
+}
+.codeBlock .nc {
+    color: #458
+}
+.codeBlock .no {
+    color: #A6E22E
+}
+.codeBlock .nd {
+    color: #3c5d5d
+}
+.codeBlock .ni {
+    color: #AE81FF
+}
+.codeBlock .ne,
+.codeBlock .nf,
+.codeBlock .nl {
+    color: #900
+}
+.codeBlock .nn {
+    color: #555
+}
+.codeBlock .nt {
+    color: #F92672
+}
+.codeBlock .nv {
+    color: #A6E22E
+}
+.codeBlock .ow {
+    color: #fff
+}
+.codeBlock .w {
+    color: #bbb
+}
+.codeBlock .mf,
+.codeBlock .mh,
+.codeBlock .mi,
+.codeBlock .mo {
+    color: #099
+}
+.codeBlock .s2,
+.codeBlock .sb,
+.codeBlock .sc,
+.codeBlock .sd,
+.codeBlock .se,
+.codeBlock .sh,
+.codeBlock .si,
+.codeBlock .sx {
+    color: #E6DB74
+}
+.codeBlock .sr {
+    color: #009926
+}
+.codeBlock .s1 {
+    color: #E6DB74
+}
+.codeBlock .ss {
+    color: #990073
+}
+.codeBlock .bp {
+    color: #999
+}
+.codeBlock .vc,
+.codeBlock .vg,
+.codeBlock .vi {
+    color: #A6E22E
+}
+.codeBlock .il {
+    color: #099
+}
+.cortana-search {
+    position: absolute;
+    right: 25px;
+    top: 18px;
+    display: block;
+    width: 230px;
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid #BDC3C7;
+    box-shadow: none;
+    padding: 5px 10px 5px 50px;
+    font-size: 14px;
+    border-box: box-sizing;
+    background: url(../img/search-icon.svg) 10px 6px no-repeat
+}
+.cortana-search:focus {
+    outline: 0;
+    border: 1px solid #7F8C8D
+}
+.cortana-search::-webkit-input-placeholder {
+    font-style: italic
+}
+.cortana-search:-moz-placeholder {
+    font-style: italic
+}
+@media only screen and (max-width: 767px) {
+    .cortana-search {
+        display: none
+    }
+}
+.cortana-search-wrapper .dropdown-menu {
+    width: 230px;
+    margin-top: 12px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    position: absolute;
+    list-style: none
+}
+.cortana-search-wrapper li {
+    padding: 8px 15px;
+    border-top: 1px solid #BDC3C7
+}
+.cortana-search-wrapper li:first-child {
+    border: none
+}
+.cortana-search-wrapper li a {
+    text-decoration: none;
+    color: #333
+}
+.cortana-search-wrapper li.active {
+    background-color: #E74C3C
+}
+.cortana-search-wrapper li.active a {
+    color: #fff
+}
+.cortana-search-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 0 5px
+}
+.cortana-search-path {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+    word-wrap: break-word;
+    white-space: normal
+}
+.cortana-search-wrapper .dropdown-menu .active a,
+.cortana-search-wrapper .dropdown-menu .active a:focus,
+.cortana-search-wrapper .dropdown-menu .active a:hover,
+.cortana-search-wrapper .dropdown-menu li a,
+.cortana-search-wrapper .dropdown-menu li a:focus,
+.cortana-search-wrapper .dropdown-menu li a:hover {
+    padding: 0;
+    background: 0 0
+}

@@ -1,0 +1,33 @@
+<div class="b-contact">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-6">
+				<form action="send-contact-form.php" method="post" id="flying_contact_form">
+					<div class="form-group">
+						<label for="contact_name">Nombre</label>
+						<input type="type" name="contact_name" id="contact_name" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label for="contact_phone">Phone</label>
+						<input type="type" name="contact_phone" id="phone" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label for="contact_email">Email address</label>
+						<input type="type" name="contact_email" id="contact_email" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label for="contact_message">Enter your message</label>
+						<textarea name="contact_message" id="contact_message" class="form-control"></textarea>
+					</div>
+					<div class="form-group">
+						<button type="submit" name="contact_submit" value="contact_form" class="btn btn-pink btn-block fade-out-submit">Enviar</button>
+					</div>
+					<input type="text" name="recaptchaHidden">
+					<p class="fade-in-submit" style="display: none;"></p>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js?hl=es"></script>

@@ -1,0 +1,84 @@
+//	----------------------------------------------------------------------------------------------------
+//
+//	 Nav off canvas
+//
+//  ----------------------------------------------------------------------------------------------------
+
+	#off-canvas {
+		display: block;
+		position: fixed; //fixed para evitar que el off derecho se salga del body
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow-x: hidden;
+		overflow-y: auto;
+		background: rgba(255,255,255,.9);
+		transition: all .5s ease-out 0s;
+		-webkit-overflow-scrolling: touch;
+
+		z-index: -1;
+		opacity: 0;
+		visibility: hidden;
+
+		.menu-list {
+			display: block;
+			margin: 0;
+			padding: 90px 0;
+			transition: all 0.5s ease-out 0s;
+			transform: translateY(-100px);
+			opacity: 0;
+
+			li {
+				text-align: center;
+				text-transform: uppercase;
+				font-family: $font-family-base;
+				font-weight: 800;
+				font-size: 2rem;
+				color: $color-black;
+				a {
+					display: inline-block;
+					padding: 0 15px;
+					color: $color-black;
+					line-height: 8rem;
+				}
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.offcanvas-active {
+		overflow: hidden;
+
+		#off-canvas {
+			z-index: 1001;
+			opacity: 1;
+			visibility: visible;
+
+			.menu-list {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+		button.navbar-toggle {
+			z-index: 1002;
+
+			.icon-bar {
+				&:nth-child(1){
+					transform: rotate(45deg);
+					background: $color-black;
+				}
+				&:nth-child(2){
+					opacity: 0;
+				}
+				&:nth-child(3){
+					transform: rotate(-45deg);
+					background: $color-black;
+				}
+			}
+		}
+	}

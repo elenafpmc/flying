@@ -1,0 +1,20 @@
+/*doc
+---
+title: fadeOut
+name: animate-fadeOut
+parent: animate.css
+---
+```html_example_table
+<svg class="icon animated fadeOut infinite" role="presentation">
+	<use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use>
+</svg>
+```
+*/
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_012</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14.2156748,15.377921 C14.0804124,15.5486242 14,15.7647424 14,15.9998075 L14,19.0001925 C14,19.5562834 14.4476291,20 14.9998075,20 L18.0001925,20 C18.5562834,20 19,19.5523709 19,19.0001925 L19,15.9998075 C19,15.7638227 18.9193889,15.5480749 18.7843854,15.3778854 C18.114784,15.7731859 17.3338796,16 16.5,16 C15.6661454,16 14.8852628,15.7731995 14.2156748,15.377921 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="5" height="4.62211456" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_012">
+            <rect id="container" x="0" y="0" width="32" height="32"></rect>
+            <g id="Rectangle-4" transform="translate(5.000000, 20.000000)" fill="#000000" fill-rule="nonzero">
+                <path d="M20,10 L20,7 C20,5.34677592 18.6533689,4 16.9966569,4 L6.0033431,4 C4.3486687,4 3,5.34641158 3,7 L3,10 L20,10 Z M1,7 C1,4.23857625 3.24736786,2 6.0033431,2 L16.9966569,2 C19.759927,2 22,4.24419519 22,7 L22,12 L1,12 L1,7 Z"></path>
+            </g>
+            <circle id="Oval-5" fill="#000000" cx="16.5" cy="24.5" r="1.5"></circle>
+            <g id="Line" transform="translate(5.000000, 20.000000)" fill-rule="nonzero" fill="#000000">
+                <polygon transform="translate(11.500000, 9.000000) rotate(-180.000000) translate(-11.500000, -9.000000) " points="10 5 10.9898591 13 12.01776 13 13 5"></polygon>
+            </g>
+            <use id="Combined-Shape" stroke="#000000" mask="url(#mask-2)" stroke-width="2" fill="#000000" xlink:href="#path-1"></use>
+            <path d="M16.5,18 C12.9101491,18 10,15.0898509 10,11.5 C10,7.91014913 12.9101491,5 16.5,5 C20.0898509,5 23,7.91014913 23,11.5 C23,15.0898509 20.0898509,18 16.5,18 Z M16.5,16 C18.9852814,16 21,13.9852814 21,11.5 C21,9.01471863 18.9852814,7 16.5,7 C14.0147186,7 12,9.01471863 12,11.5 C12,13.9852814 14.0147186,16 16.5,16 Z" id="Oval-8" fill="#000000" fill-rule="nonzero"></path>
+            <circle id="Oval-9" fill="#000000" cx="16.5" cy="19.5" r="1.5"></circle>
+            <rect id="Rectangle-14" fill="#000000" x="25" y="10" width="4" height="2"></rect>
+            <rect id="Rectangle-14-Copy-3" fill="#000000" transform="translate(9.000000, 4.000000) rotate(45.000000) translate(-9.000000, -4.000000) " x="7" y="3" width="4" height="2"></rect>
+            <rect id="Rectangle-14-Copy-4" fill="#000000" transform="translate(24.000000, 4.000000) scale(-1, 1) rotate(45.000000) translate(-24.000000, -4.000000) " x="22" y="3" width="4" height="2"></rect>
+            <rect id="Rectangle-14-Copy-2" fill="#000000" transform="translate(17.000000, 1.500000) rotate(90.000000) translate(-17.000000, -1.500000) " x="15.5" y="0.5" width="3" height="2"></rect>
+            <rect id="Rectangle-14-Copy" fill="#000000" x="4" y="10" width="4" height="2"></rect>
+        </g>
+    </g>
+</svg>

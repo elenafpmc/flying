@@ -1,0 +1,328 @@
+.b-slider {
+
+  &__content {
+    display: block;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($color-black, 0.2);
+      z-index: 2;
+    }
+    &--no-overlay:before {
+      display: none;
+    }
+
+    &__img {
+      display: block;
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      z-index: 1
+    }
+    &__caption {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 20px 100px;
+      text-align: center;
+      z-index: 3;
+
+      &--top {
+        top: 10%;
+      }
+      &--bottom {
+        top: auto;
+        bottom: 10%;
+      }
+
+      &__title {
+        font-family: $font-family-base;
+        font-size: 6rem;
+        line-height: 6.5rem;
+        font-weight: 900;
+        color: $color-white;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      &__sub {
+        font-family: $font-family-base;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-weight: 400;
+        color: $color-white;
+        text-align: center;
+        margin: 0;
+
+        &:empty {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .swiper-pagination {
+    z-index: 4;
+  }
+
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #FFF;
+    opacity: 0.2;
+
+    &-active {
+      background: #FFF;
+      opacity: 1;
+    }
+  }
+
+  .clouds {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 2;
+
+    .cloud {
+      position: absolute;
+      display: inline-block;
+      width: auto;
+      max-height: 100px;
+      transform: translate3d(-50%, -50px, 0.1px);
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.33));
+      will-change: left;
+      left: -15%;
+    }
+
+    .cloud--1 {
+      top: (random(80) * 1%) + 10%;
+      animation-name: cloud_movement_opacity;
+      animation-duration: (25 + (random(10) - 5)) * 1s;
+      animation-timing-function: linear;
+      animation-delay: random(25) * 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      //animation-fill-mode: forwards;
+    }
+    .cloud--2 {
+      top: (random(80) * 1%) + 10%;
+      animation-name: cloud_movement_opacity;
+      animation-duration: (25 + (random(10) - 5)) * 1s;
+      animation-timing-function: linear;
+      animation-delay: random(25) * 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      //animation-fill-mode: forwards;
+    }
+    .cloud--3 {
+      top: (random(80) * 1%) + 10%;
+      animation-name: cloud_movement_opacity;
+      animation-duration: (25 + (random(10) - 5)) * 1s;
+      animation-timing-function: linear;
+      animation-delay: random(25) * 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      //animation-fill-mode: forwards;
+    }
+    .cloud--4 {
+      top: (random(80) * 1%) + 10%;
+      animation-name: cloud_movement_opacity;
+      animation-duration: (25 + (random(10) - 5)) * 1s;
+      animation-timing-function: linear;
+      animation-delay: random(25) * 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      //animation-fill-mode: forwards;
+    }
+    .cloud--5 {
+      top: (random(80) * 1%) + 10%;
+      animation-name: cloud_movement_opacity;
+      animation-duration: (25 + (random(10) - 5)) * 1s;
+      animation-timing-function: linear;
+      animation-delay: random(25) * 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      //animation-fill-mode: forwards;
+    }
+    .cloud--6 {
+      top: (random(80) * 1%) + 10%;
+      animation-name: cloud_movement_opacity;
+      animation-duration: (25 + (random(10) - 5)) * 1s;
+      animation-timing-function: linear;
+      animation-delay: random(25) * 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      //animation-fill-mode: forwards;
+    }
+    .cloud--7 {
+      top: (random(80) * 1%) + 10%;
+      animation-name: cloud_movement_opacity;
+      animation-duration: (25 + (random(10) - 5)) * 1s;
+      animation-timing-function: linear;
+      animation-delay: random(25) * 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      //animation-fill-mode: forwards;
+    }
+    .cloud--8 {
+      top: (random(80) * 1%) + 10%;
+      animation-name: cloud_movement_opacity;
+      animation-duration: (25 + (random(10) - 5)) * 1s;
+      animation-timing-function: linear;
+      animation-delay: random(25) * 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      //animation-fill-mode: forwards;
+    }
+    .cloud--9 {
+      top: (random(80) * 1%) + 10%;
+      animation-name: cloud_movement_opacity;
+      animation-duration: (25 + (random(10) - 5)) * 1s;
+      animation-timing-function: linear;
+      animation-delay: random(25) * 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      //animation-fill-mode: forwards;
+    }
+    .cloud--10 {
+      top: (random(80) * 1%) + 10%;
+      animation-name: cloud_movement_opacity;
+      animation-duration: (25 + (random(10) - 5)) * 1s;
+      animation-timing-function: linear;
+      animation-delay: random(25) * 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      //animation-fill-mode: forwards;
+    }
+    .cloud--11 {
+      top: (random(80) * 1%) + 10%;
+      animation-name: cloud_movement_opacity;
+      animation-duration: (25 + (random(10) - 5)) * 1s;
+      animation-timing-function: linear;
+      animation-delay: random(25) * 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      //animation-fill-mode: forwards;
+    }
+    .cloud--12 {
+      top: (random(80) * 1%) + 10%;
+      animation-name: cloud_movement_opacity;
+      animation-duration: (25 + (random(10) - 5)) * 1s;
+      animation-timing-function: linear;
+      animation-delay: random(25) * 1s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      //animation-fill-mode: forwards;
+    }
+
+
+    @keyframes cloud_movement_opacity {
+      0% {
+        left: -15%;
+        opacity: 0.1;
+      }
+      20% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        left: 115%;
+        opacity: 0.1;
+      }
+    }
+  }
+
+
+  .flyingpig {
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -110px;
+    max-width: 220px;
+
+    animation-name: flyingpig_pig;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    filter: drop-shadow(0 0 2px rgba(220,220,220, 0.75));
+    z-index: 3;
+
+    &__pig {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+    }
+    &__wing {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: 50% 50%;
+
+      animation-name: flyingpig_wing;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+    }
+
+    @keyframes flyingpig_pig {
+      0% {
+        transform:translate(0, 0);
+      }
+      25% {
+        transform: translate(0, 10px);
+      }
+      // 50% {
+      //   transform: translate(0, 0);
+      // }
+      75% {
+        transform: translate(0, -15px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+    @keyframes flyingpig_wing {
+      0% {
+        transform: rotate(0deg) translate(0, 0);
+      }
+      25% {
+        transform: rotate(-20deg) translate(0, -3px);
+      }
+      // 50% {
+      //   transform: rotate(0deg) translate(0, 0);
+      // }
+      75% {
+        transform: rotate(20deg) translate(0, 3px);
+      }
+      100% {
+        transform: rotate(0deg) translate(0, 0);
+      }
+    }
+  }
+
+}

@@ -1,0 +1,26 @@
+/*doc
+---
+title: slideInDown
+name: animate-slideInDown
+parent: animate.css
+---
+```html_example_table
+<svg class="icon animated slideInDown infinite" role="presentation">
+	<use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use>
+</svg>
+```
+*/
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}

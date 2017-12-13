@@ -1,0 +1,118 @@
+.b-section {
+	color: $color-white;
+	&__content {
+		height: 100%;
+		padding: 80px 0;
+	}
+	&__icon {
+		height: 100%;
+		padding: 80px 0;
+		text-align: center;
+		vertical-align: middle;
+		.icon {
+
+		}
+	}
+	&__title {
+		font-family: $font-family-title;
+		font-size: 6rem;
+		color: $color-white;
+		text-transform: uppercase;
+  		text-align: center;
+		opacity: .5;
+		transform: rotate(180deg);
+		writing-mode: vertical-lr;
+  		text-orientation: mixed;
+
+  		height: 100%;
+  		float: left;
+  		margin-right: 35px;
+  		margin-left: 35px;
+  		margin-bottom: 0;
+	}
+	&__subtitle {
+		font-family: $font-family-base;
+		font-size: 2rem; line-height: 3rem;
+		font-weight: 900;
+		color: $color-white;
+		letter-spacing: 3px;
+
+		padding-bottom: 40px;
+		margin-bottom: 0;
+	}
+	&__text {
+			
+		p {
+			font-family: $font-family-base;
+			font-size: 1.6rem; line-height: 2.5rem;
+			font-weight: 400;
+			color: $color-white;
+
+			padding-bottom: 10px;
+		}
+	}
+	&__link {
+		border-bottom: 3px solid $color-white;
+		display: inline-block;
+	
+		font-family: $font-family-base;
+		font-size: 1.2rem; line-height: 2.6rem;
+		font-weight: 900;
+		color: $color-white;
+		text-transform: uppercase;
+		letter-spacing: 1.85px;
+	}
+	&.frontend {
+		background: linear-gradient(to right, $color-pink-dark 0%, $color-pink-dark 50%,#000000 50%, $color-pink 50%, $color-pink 100%);
+		.b-section__content {
+			background-color: $color-pink;
+		}
+		.b-section__icon {
+			background-color: $color-pink-dark;
+		}
+	}
+	&.backend {
+		background: linear-gradient(to right, $color-blue-dark 0%, $color-blue-dark 50%,#000000 50%, $color-blue-darkest 50%, $color-blue-darkest 100%);
+		.b-section__content {
+			background-color: $color-blue-dark;
+		}
+		.b-section__icon {
+			background-color: $color-blue-darkest;
+		}
+	}
+	&.ux {
+		background: linear-gradient(to right, $color-green-dark 0%, $color-green-dark 50%,#000000 50%, $color-green 50%, $color-green 100%);
+		.b-section__content {
+			background-color: $color-green;
+		}
+		.b-section__icon {
+			background-color: $color-green-dark;
+		}
+	}
+	&.design {
+		background: linear-gradient(to right, $color-yellow 0%, $color-yellow 50%,#000000 50%, $color-yellow-dark 50%, $color-yellow-dark 100%);
+		.b-section__content {
+			background-color: $color-yellow;
+		}
+		.b-section__icon {
+			background-color: $color-yellow-dark;
+		}
+	}
+	&.strategy {
+		background: linear-gradient(to right, $color-purple-dark 0%, $color-purple-dark 50%,#000000 50%, $color-purple 50%, $color-purple 100%);
+		.b-section__content {
+			background-color: $color-purple;
+		}
+		.b-section__icon {
+			background-color: $color-purple-dark;
+		}
+	}
+	.even {
+		flex-direction: row-reverse;
+	}
+	.odd {
+		.b-section__title {
+			margin-left: 0;
+		}
+	}
+}

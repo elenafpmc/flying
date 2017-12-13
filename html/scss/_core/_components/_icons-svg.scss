@@ -1,0 +1,47 @@
+
+//	--------------------------------------------------
+//	Tamaños
+// --------------------------------------------------
+
+// Permitimos colorear los iconos
+// .icon use>svg path para solventar Firefox BUG
+
+svg path:not(.custom-map),
+.icon use>svg path  {
+  fill: inherit;
+}
+
+.icon{
+	
+	&--xxs{
+		width: $icon-xxs*1px;
+		height: $icon-xxs*1px;
+	}
+	
+	&--xs{
+		width: $icon-xs*1px;
+		height: $icon-xs*1px;
+	}
+	
+	&--sm{
+		width: $icon-sm*1px;
+		height: $icon-sm*1px;
+	}
+	
+	&--md{
+		width: $icon-md*1px;
+		height: $icon-md*1px;
+	}
+	&--md-lg{
+		width: $icon-md-lg*1px;
+		height: $icon-md-lg*1px;
+	}
+	&--lg{
+		width: $icon-lg*1px;
+		height: $icon-lg*1px;
+	}
+	
+	
+	
+}
+

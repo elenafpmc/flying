@@ -1,0 +1,128 @@
+.b-projects {
+  &__filters {
+    &__list {
+      display: block;
+      padding: 0;
+      margin: 40px 0 20px;
+      float: right;
+      list-style: none;
+
+      li {
+        display: inline-block;
+
+        a {
+          display: block;
+          padding: 25px 15px;
+          font-family: $font-family-base;
+          font-size: 15px;
+          line-height: 29px;
+          color: #666;
+          text-transform: uppercase;
+          text-decoration: none;
+          outline: none !important;
+          cursor: pointer;
+
+          &.active {
+            font-weight: 900;
+            color: $color-black;
+          }
+        }
+      }
+    }
+  }
+  &__grid {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: auto;
+    margin-right: -15px;
+    margin-bottom: 40px;
+
+    &__item {
+      display: inline-block;
+      position: relative;
+      width: calc(33.333% - 15px);
+      min-height: 250px;
+      max-height: 250px;
+      margin-bottom: 15px;
+      margin-right: 15px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba($color-black, 0.1);
+      cursor: pointer;
+
+      @media(max-width: $screen-sm-max){
+        width: calc(50% - 15);
+      }
+      @media(max-width: $screen-xs-max){
+        width: 100%;
+      }
+
+      &__img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        z-index: 1;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -5px;
+          left: -5px;
+          right: -5px;
+          bottom: -5px;
+          background-color: rgba($color-white, 0.6);
+          transition: all 0.3s ease-out 0s;
+        }
+      }
+      &__info {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        padding: 20px;
+        z-index: 2;
+
+        &__title {
+          display: block;
+          font-family: $font-family-title;
+          font-size: 15px;
+          line-height: 22px;
+          color: $color-black;
+          text-transform: uppercase;
+          margin: 0;
+        }
+        &__category {
+          display: block;
+          font-family: $font-family-base;
+          font-size: 15px;
+          color: $color-black;
+          text-transform: capitalize;
+          font-weight: 400;
+          opacity: 0.5;
+          margin: 0;
+        }
+      }
+
+      &:hover {
+        .b-projects__grid__item__img{
+
+          &:before {
+            background-color: rgba($color-white, 0.9);
+          }
+        }
+      }
+    }
+  }
+}

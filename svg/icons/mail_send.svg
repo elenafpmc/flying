@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_018</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_018">
+            <rect id="container" x="0" y="0" width="32" height="32"></rect>
+            <path d="M21,23 L21,10 L2,10 L2,23 L21,23 Z M0,25 L0,8 L23,8 L23,25 L0,25 Z" id="Fill-1" fill="#000000" fill-rule="nonzero"></path>
+            <polygon id="Stroke-2" fill="#000000" fill-rule="nonzero" points="1.65079137 8.2407434 0.349208627 9.7592566 11.5 19.3170778 22.6507914 9.7592566 21.3492086 8.2407434 11.5 16.6829222"></polygon>
+            <rect id="Rectangle-28" fill="#000000" x="25" y="12" width="7" height="2"></rect>
+            <rect id="Rectangle-28-Copy" fill="#000000" x="25" y="16" width="4" height="2"></rect>
+            <rect id="Rectangle-28-Copy-2" fill="#000000" x="25" y="20" width="7" height="2"></rect>
+        </g>
+    </g>
+</svg>

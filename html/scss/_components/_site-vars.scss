@@ -1,0 +1,228 @@
+// --------------------------------------------------
+//	Márgenes
+// --------------------------------------------------
+$margin1: 10px;
+$margin2: 20px;
+$margin25: 25px;
+$margin3: 30px;
+$margin4: 40px;
+$margin5: 50px;
+
+
+// --------------------------------------------------
+//	Tamaños de iconos
+// --------------------------------------------------
+$icon-lg: 128;
+$icon-md-lg: 80;
+$icon-md: 32;
+$icon-sm: 24;
+$icon-xs: 16;
+$icon-xxs: 12;
+
+// --------------------------------------------------
+//	Altura de inputs y buttons
+// --------------------------------------------------
+$input-height-xs: 20;
+$input-height-sm: 40;
+$input-height: 60;
+$input-height-lg: 70;
+
+
+// --------------------------------------------------
+// Header
+// --------------------------------------------------
+
+$mobileHeaderHeight: 60px;
+
+// --------------------------------------------------
+// Colores - Paleta Global
+// --------------------------------------------------
+
+/*doc
+---
+title: Colors
+name: colors
+category: Components Colors
+---
+
+Colores Paleta global
+
+
+<div class="exampleOutput">
+	<div class="square">
+		<div class="bg-color-success"></div>
+		<div class="bg-color-info"></div>
+		<div class="bg-color-warning"></div>
+		<div class="bg-color-danger"></div>
+		<div class="bg-color-text"></div>
+		<div class="bg-color-text-25"></div>
+		<hr>
+		<div class="bg-color-black"></div>
+		<div class="bg-color-black-50"></div>
+		<div class="bg-color-ebony-clay"></div>
+		<div class="bg-color-limed-spruce"></div>
+		<div class="bg-color-limed-spruce-50"></div>
+		<div class="bg-color-limed-spruce-25"></div>
+		<div class="bg-color-silver"></div>
+		<div class="bg-color-silver-var"></div>
+		<div class="bg-color-mercury"></div>
+		<div class="bg-color-concrete"></div>
+		<div class="bg-color-alabaster"></div>
+		<hr>
+		<div class="bg-color-dodger-blue"></div>
+		<div class="bg-color-dodger-blue-50"></div>
+		<div class="bg-color-cerise-red"></div>
+		<div class="bg-color-sunglow"></div>
+	</div>
+</div>
+
+<style>.square div{height: 110px;width: 110px;margin-right: 30px;margin-bottom: 30px;display: inline-block;	position: relative;	}.square div:after{content:attr(data-color);display:block;width:100%;font-size:12px;padding:5px 0;color: #fff;position: absolute;line-height: 12px;text-align:center;background: rgba(0,0,0,.2)}.rect{height:20px;width:80px;}</style>
+
+
+<script>
+
+$('.square div').each(function(){str = $(this).attr('class');str = str.replace("bg-", "");$(this).attr('data-color',str)});
+
+</script>
+
+*/
+
+
+// --------------------------------------------------
+// Fuentes, tamaños de fuentes
+// --------------------------------------------------
+
+$font-family-base: 'Avenir';
+$font-family-title: 'PaytoneOne';
+
+$body: 1.6rem;
+
+$lead: 2.4rem;
+
+$small: 1.2rem;
+
+
+$h1: 6.0rem;
+$h2: 6.0rem;
+$h3: 2.0rem;
+$h4: 1.6rem;
+$h5: 1.4rem;
+$h6: 1.2rem;
+
+$h1-display: 8.0rem;
+$h2-display: 6.4rem;
+$h3-display: 4.4rem;
+$h4-display: 3.4rem;
+$h5-display: 3.2rem;
+$h6-display: 2.1rem;
+
+
+// --------------------------------------------------
+// Colores - Nombrar mediante http://chir.ag/projects/name-that-color/
+// --------------------------------------------------
+$color-white: #fff;
+$color-success: #99cc33;
+$color-info:#ffff00;
+$color-warning: #fb7d0c;
+$color-danger: #ec3457;
+$color-text: #979899;
+$color-text-25: rgba($color-text,.25);
+$color-shadow: rgba(8,21,37,0.12);
+
+//Grises
+$color-black-0: #000000;
+$color-black: #202020;
+$color-black-50 : rgba($color-black,.5);
+$color-ebony-clay: #252C34;
+$color-limed-spruce: #333C47;
+$color-limed-spruce-50: rgba($color-limed-spruce,.5);
+$color-limed-spruce-25: rgba($color-limed-spruce,.25);
+$color-silver: #C1C1C1;
+$color-silver-var: #CCCCCC;
+$color-mercury: #E3E3E3;
+$color-concrete: #F2F2F2;
+$color-alabaster: #F8F8F8;
+$color-mako: #41474D;
+$color-iron: #E0E1E1;
+$color-oslo-gray: #979899;
+$color-mine-shaft: #1F1F1F;
+
+//Colores
+$color-dodger-blue: #0091DA;
+$color-dodger-blue-50:  rgba($color-dodger-blue,.5);
+$color-dodger-blue-30:  rgba($color-dodger-blue,.3);
+$color-blizzar-blue:  #b2def3;
+$color-cerise-red: #D72A6B;
+$color-sunglow: #FFC732;
+$color-yellow: #FFFF00;
+$color-twitter: #24A9E6;
+$color-facebook: #43619C;
+$color-gplus: #DE4D3B;
+$color-linkedin: #187FB8;
+$color-honey-flower: #470a68;
+$color-robins-egg-blue: #00BAB3;
+$color-gigas: #483698;
+$color-sorbus: #F68D2E;
+
+
+$color-primary: #FF1B77;
+$colo-bg-hero: rgba(0, 0, 0, .17);
+$color-grey-form: #F6F6F6;
+
+$color-pink: #FF2679;
+$color-pink-dark: #E91763;
+
+$color-blue-dark: #38425A;
+$color-blue-darkest: #2D354A;
+
+$color-green: #77C7C5;
+$color-green-dark: #5DB1AF;
+
+$color-yellow: #FF9D11;
+$color-yellow-dark: #EF8E0F;
+
+$color-purple: #7227A3;
+$color-purple-dark: #4F1086;
+
+//Array para crear clases helpers
+$colors:
+	"color-primary" $color-primary,
+
+	"color-white" $color-white,
+	"color-success" $color-success,
+	"color-info" $color-info,
+	"color-warning" $color-warning,
+	"color-danger" $color-danger,
+	"color-black" $color-black,
+	"color-black-50" $color-black-50,
+	"color-ebony-clay" $color-ebony-clay,
+	"color-limed-spruce" $color-limed-spruce,
+	"color-limed-spruce-50" $color-limed-spruce-50,
+	"color-limed-spruce-25" $color-limed-spruce-25,
+	"color-text" $color-text,
+	"color-text-25" $color-text-25,
+	"color-silver" $color-silver,
+	"color-silver-var" $color-silver-var,
+	"color-mercury" $color-mercury,
+	"color-concrete" $color-concrete,
+	"color-alabaster" $color-alabaster,
+	"color-mako" $color-mako,
+	"color-honey-flower" $color-honey-flower,
+	"color-dodger-blue" $color-dodger-blue,
+	"color-dodger-blue-50" $color-dodger-blue-50,
+	"color-dodger-blue-30" $color-dodger-blue-30,
+	"color-yellow" $color-yellow,
+	"color-cerise-red" $color-cerise-red,
+	"color-twitter" $color-twitter,
+	"color-sunglow" $color-sunglow,
+	"color-facebook" $color-facebook,
+	"color-gplus" $color-gplus,
+	"color-linkedin" $color-linkedin,
+	"color-robins-egg-blue" $color-robins-egg-blue,
+	"color-iron" $color-iron,
+	"color-blizzar-blue" $color-blizzar-blue,
+	"color-gigas" $color-gigas,
+	"color-sorbus" $color-sorbus,
+	"color-oslo-gray" $color-oslo-gray,
+	"color-mine-shaft" $color-mine-shaft,
+;

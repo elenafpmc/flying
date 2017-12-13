@@ -1,0 +1,160 @@
+/*doc
+---
+title: Grid
+name: grid
+category: Components Grid
+---
+
+Grid de 12 columnas, 30px (15+15) de gutter interior con varios cortes responsive:
+
+col-xxs < 480px
+
+col-xs < 768px
+
+col-sm < 1024px
+
+col-md < 1200px
+
+col-lg < 1200px
+
+col-xl < 1440px
+
+<style>
+
+	.demo{ background: gray; color:#fff; text-align:center } 
+
+</style>
+
+```html_example
+
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-12 col-lg-6 col-xl-12">
+		<div class="demo">Contenido</div>
+	</div>	
+</div><!-- row -->
+```
+*/ 
+*{
+	box-sizing: border-box;
+}
+
+.container{	
+	padding-right: $grid-gutter/2;
+	padding-left: $grid-gutter/2;
+	margin-right: auto;
+	margin-left: auto;	
+	min-width: 320px;
+	@include clearfix();
+	
+	@media (min-width: $screen-sm) {
+		width: $container-sm;
+	}
+	
+	@media (min-width: $screen-md) {
+		width: $container-md;
+	}
+	
+	@media (min-width: $screen-lg) {
+		width: $container-lg;
+	}
+	
+	@media (min-width: $screen-xl) {
+		width: $container-xl;
+	}
+	
+	&--fluid{
+		width: 100%;	
+	}
+	
+	&--full{
+		
+		width: $container-full-size;
+		margin-right: auto;
+		margin-left: auto;
+		@media (max-width: $container-full-size) {
+			width: 100%;
+		}				
+		
+		//Para que no baile el scroll lateral no puede haber paddings ni margins
+		.row{		
+			[class*="col-"]:first-child{ padding-left: 0 !important }
+			[class*="col-"]:last-child{ padding-right: 0 !important }		
+		}
+		
+		
+	}
+		
+	
+}
+
+
+
+.row{
+	margin-left: $grid-gutter/2*-1;
+	margin-right: $grid-gutter/2*-1;
+	@include clearfix;
+	
+	//	 Rows sin padding interior
+	&--no--padding{
+	  margin-left: 0;
+	  margin-right: 0;
+	
+	  > [class*="col-"] {
+	    padding-left: 0 ;
+	    padding-right: 0 ;
+	  }
+		
+	}
+}
+
+[class*="col-"] {
+  float: left;
+  padding-left: $grid-gutter/2;
+  padding-right: $grid-gutter/2;
+  width: 100%;
+  min-height: 1px;
+}
+
+[class*="col-reverse"]{
+	float: left;
+}
+
+// Generamos los grids
+@include create-grid(xs);
+@include create-grid(sm);
+@include create-grid(md);
+@include create-grid(lg);
+@include create-grid(xl);
+
+
+
+// -------------------------------------------------- 
+//	Reverse column
+// --------------------------------------------------
+
+
+.col-reverse-xs{
+	@media (min-width: $screen-xs) and (max-width:$screen-sm-max) {
+		float: right;
+	}
+}
+.col-reverse-sm{
+	@media (min-width: $screen-sm) and (max-width:$screen-md-max) {
+		float: right;
+	}
+}
+
+.col-reverse-md{
+	@media (min-width: $screen-md) and (max-width:$screen-lg-max) {
+		float: right;
+	}
+}
+
+.col-reverse-lg{
+	@media (min-width: $screen-lg) and (max-width:$screen-xl) {
+		float: right;
+	}
+}
+
+
+

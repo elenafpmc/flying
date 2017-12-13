@@ -1,0 +1,26 @@
+/*doc
+---
+title: slideOutUp
+name: animate-slideOutUp
+parent: animate.css
+---
+```html_example_table
+<svg class="icon animated slideOutUp infinite" role="presentation">
+	<use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use>
+</svg>
+```
+*/
+@keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.slideOutUp {
+  animation-name: slideOutUp;
+}

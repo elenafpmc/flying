@@ -1,0 +1,87 @@
+//	----------------------------------------------------------------------------------------------------
+//
+//	 Browser Fixes
+//
+//  ----------------------------------------------------------------------------------------------------
+
+
+//	--------------------------------------------------
+//  Firefox buttons
+//  --------------------------------------------------
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+//	--------------------------------------------------
+//  Webkit Input Number Fix
+//  --------------------------------------------------
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+//	--------------------------------------------------
+//	 Fix apariencia inputs en iOS
+//	--------------------------------------------------
+input, textarea, select { -webkit-appearance: none; -moz-appearance: none;   }
+
+//	--------------------------------------------------
+//	 WinMobile Responsive Fix
+//	--------------------------------------------------
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+
+//	--------------------------------------------------
+//	 Outline Fix
+//	--------------------------------------------------
+a:focus, a:active, 
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    outline : 0;
+}
+a:focus,
+input:focus{ outline: none; outline-style: none  }
+
+
+//	--------------------------------------------------
+//	Fix color destacado al hacer "click" en iOS
+//	--------------------------------------------------
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+//	--------------------------------------------------
+//	Ocultar Spinner input number para Firefox
+//	--------------------------------------------------
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+//	--------------------------------------------------
+//	Arreglo de text flick en animaciones.
+//	--------------------------------------------------
+.webkit-anim-fix{
+	-webkit-transform: translate3d(0, 0, 0);
+}

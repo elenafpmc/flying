@@ -1,0 +1,75 @@
+@@include("core/html-start.html")
+
+	@@include("blocks/header.html", { "style": "header--light header--primary" })
+
+	<main class="wrapper" role="main">
+    @@include("blocks/b-slider.html")
+    @@include("blocks/b-about.html")
+    @@include("blocks/b-section.html", {
+      "class": "frontend",
+      "title": "Front End",
+      "subtitle": "LOREM IPSUM <br /> CONSECTETUR ELIT.",
+      "text": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.",
+                "Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim."
+              ],
+      "icon": "web-design",
+      "even": true
+     })
+
+    @@include("blocks/b-section.html", {
+      "class": "backend",
+      "title": "Back End",
+      "subtitle": "LOREM IPSUM <br /> CONSECTETUR ELIT.",
+      "text": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.",
+                "Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim."
+              ],
+      "icon": "brainstorm",
+      "even": false
+     })
+
+    @@include("blocks/b-section.html", {
+      "class": "ux",
+      "title": "UX",
+      "subtitle": "LOREM IPSUM <br /> CONSECTETUR ELIT.",
+      "text": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.",
+                "Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim."
+              ],
+      "icon": "graphic-design",
+      "even": true
+     })
+
+    @@include("blocks/b-section.html", {
+      "class": "design",
+      "title": "Diseño",
+      "subtitle": "LOREM IPSUM <br /> CONSECTETUR ELIT.",
+      "text": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.",
+                "Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim."
+              ],
+      "icon": "design",
+      "even": false
+     })
+
+    @@include("blocks/b-section.html", {
+      "class": "strategy",
+      "title": "Estrategia",
+      "subtitle": "LOREM IPSUM <br /> CONSECTETUR ELIT.",
+      "text": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.",
+                "Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim."
+              ],
+      "icon": "perspective",
+      "even": true
+     })
+
+     @@include("blocks/b-contact.html")
+
+	</main>
+
+  @@include("blocks/footer.html")
+  @@include("core/plugins.js.html")
+
+@@include("core/html-end.html")

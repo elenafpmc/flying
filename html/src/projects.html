@@ -1,0 +1,20 @@
+@@include("core/html-start.html")
+
+	@@include("blocks/header.html", { "style": "header--primary header--placehold" })
+
+	<main class="wrapper" role="main">
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					@@include("blocks/b-projects.html")
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+  @@include("blocks/footer.html")
+  @@include("core/plugins.js.html")
+
+@@include("core/html-end.html")

@@ -1,0 +1,26 @@
+/*doc
+---
+title: slideInRight
+name: animate-slideInRight
+parent: animate.css
+---
+```html_example_table
+<svg class="icon animated slideInRight infinite" role="presentation">
+	<use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use>
+</svg>
+```
+*/
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}

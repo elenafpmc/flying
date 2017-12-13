@@ -1,0 +1,27 @@
+/*doc
+---
+title: fadeInUpBig
+name: animate-fadeInUpBig
+parent: animate.css
+---
+```html_example_table
+<svg class="icon animated fadeInUpBig infinite" role="presentation">
+	<use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use>
+</svg>
+```
+*/
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUpBig {
+  animation-name: fadeInUpBig;
+}

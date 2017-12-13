@@ -1,0 +1,24 @@
+.b-about {
+	background-color: $color-white;
+	padding: 45px;
+	&__title {
+		font-family: $font-family-title;
+		font-size: 6rem;
+		font-weight: 900;
+		color: $color-black;
+		text-align: center;
+
+		padding-bottom: 40px;
+		margin-right: 0;
+	}
+	&__parr {
+		font-family: $font-family-base;
+		font-size: 1.6rem; line-height: 2.1rem;
+		color: $color-black;
+		font-weight: 400;
+		text-align: center;
+
+		margin: 0;
+		padding-bottom: 15px;
+	}
+}

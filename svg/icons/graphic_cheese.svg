@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_019</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M29.5616209,15.407696 L16.6464123,15.407696 L16.6464123,2.49248736 C23.7766838,2.49248736 29.5616209,8.27742455 29.5616209,15.407696 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12.9152086" height="12.9152086" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M17.6385963,17.5602307 L30.6378883,17.5602307 C30.6378883,21.1421831 29.1748374,24.4046186 26.8036858,26.7421368 L17.6385963,17.5602307 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12.999292" height="9.18190612" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M14.4938776,17.4593307 L23.6757837,26.6412368 C21.3382655,29.0123884 18.07583,30.4754393 14.4938776,30.4754393 C7.36360616,30.4754393 1.57866897,24.6905021 1.57866897,17.5602307 C1.57866897,10.4299593 7.36360616,4.64502213 14.4938776,4.64502213 L14.4938776,17.4593307 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="22.0971147" height="25.8304172" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_019">
+            <rect id="container" x="0" y="0" width="32" height="32"></rect>
+            <use id="Path" stroke="#000000" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+            <use id="Path" stroke="#000000" mask="url(#mask-4)" stroke-width="4" xlink:href="#path-3"></use>
+            <use id="Path" stroke="#000000" mask="url(#mask-6)" stroke-width="4" xlink:href="#path-5"></use>
+        </g>
+    </g>
+</svg>

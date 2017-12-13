@@ -1,0 +1,27 @@
+/*doc
+---
+title: bounceOutLeft
+name: animate-bounceOutLeft
+parent: animate.css
+---
+```html_example_table
+<svg class="icon animated bounceOutLeft infinite" role="presentation">
+	<use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use>
+</svg>
+```
+*/
+@keyframes bounceOutLeft {
+  20% {
+    opacity: 1;
+    transform: translate3d(20px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+
+.bounceOutLeft {
+  animation-name: bounceOutLeft;
+}

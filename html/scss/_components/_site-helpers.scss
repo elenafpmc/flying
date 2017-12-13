@@ -1,0 +1,73 @@
+// Centrado vertical de elementos
+.vertical-center {
+	position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+    &--right {
+	    right: 15px;	
+    }
+    
+}
+
+.overlap{
+	position: relative;
+	*{
+		z-index: 1;
+	}
+	&--bottom{
+		
+		&:after{
+			content: '';
+			display: block;
+			height: 120px;
+			width: 100%;
+			pointer-events: none;
+			background: white;
+			position: absolute;
+			bottom: 0;
+			z-index: 0;
+		}
+	}
+	
+}
+
+.img-flow{
+		position: absolute;
+		&--left{
+			right: 0;	
+		}
+		&--right{
+			left: 0;	
+		}
+		@media (max-width: $screen-xs-max) {
+			position: static;
+			width: 100%;
+			height: auto;
+		}
+	
+}
+
+.p1 {
+	padding: 10px;
+}
+.p2 {
+	padding: 20px;
+}
+.p3 {
+	padding: 30px;
+}
+.p4 {
+	padding: 40px;
+}
+.p5 {
+	padding: 50px;
+}
+
+.no-shadow.no-shadow{
+	box-shadow: none;
+}
+
+
