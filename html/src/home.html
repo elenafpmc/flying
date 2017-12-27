@@ -2,16 +2,19 @@
 
 	@@include("blocks/header.html", { "style": "header--light header--primary" })
 
-	<main class="wrapper" role="main">
+	<main class="wrapper" role="main" id="main">
     @@include("blocks/b-slider.html")
     @@include("blocks/b-about.html")
     @@include("blocks/b-section.html", {
       "class": "frontend",
       "title": "Front End",
-      "subtitle": "LOREM IPSUM <br /> CONSECTETUR ELIT.",
+      "subtitle": "HILANDO FINO, <br />CONSTRUYENDO FUERTE",
       "text": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.",
-                "Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim."
+                "Consideramos que la maquetación da el punto de excelencia en el diseño de un proyecto.",
+                "Prestamos mucha atención al detalle y nos gusta afinar al pixel.",
+                "No por ello dejamos de lado aspectos como la performance o la optimización de la página.",
+                "Creamos proyectos 100% modulables y escalables, adaptados para su posterior integración.",
+                "Algunas de las tecnologías que usamos son Angular, React, etc."
               ],
       "icon": "web-design",
       "even": true
@@ -20,10 +23,11 @@
     @@include("blocks/b-section.html", {
       "class": "backend",
       "title": "Back End",
-      "subtitle": "LOREM IPSUM <br /> CONSECTETUR ELIT.",
+      "subtitle": "LOS PILARES SÓLIDOS <br />DE UN PROYECTO",
       "text": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.",
-                "Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim."
+								"A pesar de ser la parte menos visible de un proyecto, consideramos que es una de las más importantes.",
+								"Un buen back end hará que tu sitio funcione mejor, por eso nos encargamos de realizar una buena base para tener unos pilares sólidos.",
+								"Realizamos proyectos en Drupal, Magento, Wordpress o Prestashop."
               ],
       "icon": "brainstorm",
       "even": false
@@ -32,10 +36,11 @@
     @@include("blocks/b-section.html", {
       "class": "ux",
       "title": "UX",
-      "subtitle": "LOREM IPSUM <br /> CONSECTETUR ELIT.",
+      "subtitle": "UNA BUENA EXPERIENCIA <br />= CLIENTE SATISFECHO",
       "text": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.",
-                "Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim."
+								"Se lo ponemos fácil a los usuarios, por eso le damos tanta importancia a la conceptualización y funcionalidad de un site.",
+								"Crear unos cimientos sólidos parten de un estudio centrado en nuestro target para que su experiencia sea la mejor, buscando siempre la mayor rentabilidad para nuestros clientes.",
+								"Prototipos, customer journey, investigación."
               ],
       "icon": "graphic-design",
       "even": true
@@ -44,10 +49,12 @@
     @@include("blocks/b-section.html", {
       "class": "design",
       "title": "Diseño",
-      "subtitle": "LOREM IPSUM <br /> CONSECTETUR ELIT.",
+      "subtitle": "Y QUE SERÍA DE LA VIDA<br /> SIN COSAS BONITAS",
       "text": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.",
-                "Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim."
+								"Además de la usabilidad y la experiencia de usuario, nada tendría sentido si no fuera fácil de digerir.",
+								"A esto nos ayuda el diseño, otro de nuestros pilares fundamentales y aspecto de gran importancia.",
+								"Nos gusta lo simple, sencillo pero con gusto. Para nosotros menos es más.",
+								"Realizamos branding, diseño web, banners y creatividades de todo tipo."
               ],
       "icon": "design",
       "even": false
@@ -56,10 +63,11 @@
     @@include("blocks/b-section.html", {
       "class": "strategy",
       "title": "Estrategia",
-      "subtitle": "LOREM IPSUM <br /> CONSECTETUR ELIT.",
+      "subtitle": "TODO HA DE TENER<br /> UN SENTIDO",
       "text": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.",
-                "Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim."
+								"Cualquier proyecto tiene un fin, y éste es el que te ayudaremos a conseguir, trazando para ello los planes que mejor se adecuen a tus necesidades.",
+								"Ponemos los medios necesarios para que alcances tus objetivos.",
+								"Realizamos planes de social media, estrategia online, SEO, SEM, etc."
               ],
       "icon": "perspective",
       "even": true
@@ -70,6 +78,7 @@
 	</main>
 
   @@include("blocks/footer.html")
+	@@include("blocks/b-cookies.html")
   @@include("core/plugins.js.html")
 
 @@include("core/html-end.html")

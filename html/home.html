@@ -15,7 +15,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<![endif]-->
 
-    <title></title>
+    <title>Flying Pigs</title>
     <meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="author" content="">
@@ -87,15 +87,27 @@
 		<![endif]-->
 		<!-- /HTML5 IE8 -->
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M4C8HQC');</script>
+    <!-- End Google Tag Manager -->
+
     </head>
     <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4C8HQC"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
 
 
 	<header class="header header--light header--primary">
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="#main">
 					<img src="svg/logo.svg" alt="Flying Pigs">
 				</a>
 			</div>
@@ -119,28 +131,28 @@
 
 						<ul class="menu-list">
 							<li>
-								<a href="#">About us</a>
+								<a href="#aboutus" data-text="About us">About us</a>
 							</li>
 							<li>
-								<a href="#">Front end</a>
+								<a href="#frontend" data-text="Front end">Front end</a>
 							</li>
 							<li>
-								<a href="#">Back end</a>
+								<a href="#backend" data-text="Back end">Back end</a>
 							</li>
 							<li>
-								<a href="#">UX</a>
+								<a href="#ux" data-text="UX">UX</a>
 							</li>
 							<li>
-								<a href="#">Diseño</a>
+								<a href="#design" data-text="Diseño">Diseño</a>
 							</li>
 							<li>
-								<a href="#">Estrategia</a>
+								<a href="#strategy" data-text="Estrategia">Estrategia</a>
 							</li>
+							<!-- <li>
+								<a href="#" data-text="Proyectos">Proyectos</a>
+							</li> -->
 							<li>
-								<a href="#">Proyectos</a>
-							</li>
-							<li>
-								<a href="#">Contacto</a>
+								<a href="#contact" data-text="Contacto">Contacto</a>
 							</li>
 						</ul>
 
@@ -155,7 +167,7 @@
 </header>
 
 
-	<main class="wrapper" role="main">
+	<main class="wrapper" role="main" id="main">
     <div class="b-slider">
 	<!-- Slider main container -->
 	<div class="swiper-container">
@@ -209,31 +221,53 @@
 	</div>
 </div>
 
-    <div class="b-about">
+    <div class="b-about" id="aboutus">
 	<div class="container">
 		<h2 class="b-about__title">
 			ABOUT US.
 		</h2>
 		<p class="b-about__parr">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna. Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim.
+			Somos una empresa de profesionales apasionados por el sector digital.
+		</p>
+		<p class="b-about__parr">
+			Nuestro equipo está formado por desarrolladores front, back y fullstack, diseñadores y gestores de proyecto.
+		</p>
+		<p class="b-about__parr">
+			Buscamos siempre la excelencia en nuestro trabajo.
+		</p>
+		<p class="b-about__parr">
+			Nos gustan los retos y nos gusta conseguir imposibles, si no, ¿qué sentido tendría nuestra profesión?
+		</p>
+		<p class="b-about__parr">
+			Ésta es nuestra filosofía y el porqué de nuestro nombre. 
+		</p>
+		<p class="b-about__parr">
+			... y hacemos que los cerdos vuelen
 		</p>
 	</div>
 </div>
-    <section class="b-section frontend">
+
+    <section class="b-section frontend" id="frontend">
 	<div class="container">
 		<div class="row no-gutters align-items-stretch  even  ">
 			<div class="col-7">
 				<div class="b-section__content">
 					<h3 class="b-section__title">Front End</h3>
-					<h4 class="b-section__subtitle">LOREM IPSUM <br /> CONSECTETUR ELIT.</h4>
+					<h4 class="b-section__subtitle">HILANDO FINO, <br />CONSTRUYENDO FUERTE</h4>
 					<div class="b-section__text">
 						
-						  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.</p>
+						  <p>Consideramos que la maquetación da el punto de excelencia en el diseño de un proyecto.</p>
 						
-						  <p>Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim.</p>
+						  <p>Prestamos mucha atención al detalle y nos gusta afinar al pixel.</p>
+						
+						  <p>No por ello dejamos de lado aspectos como la performance o la optimización de la página.</p>
+						
+						  <p>Creamos proyectos 100% modulables y escalables, adaptados para su posterior integración.</p>
+						
+						  <p>Algunas de las tecnologías que usamos son Angular, React, etc.</p>
 						
 					</div>
-					<a href="#" class="b-section__link">View more</a>
+					<a href="#contact" class="b-section__link">Contacta</a>
 				</div>
 			</div>
 			<div class="col-5">
@@ -245,21 +279,24 @@
 	</div>
 </section>
 
-    <section class="b-section backend">
+
+    <section class="b-section backend" id="backend">
 	<div class="container">
 		<div class="row no-gutters align-items-stretch   odd ">
 			<div class="col-7">
 				<div class="b-section__content">
 					<h3 class="b-section__title">Back End</h3>
-					<h4 class="b-section__subtitle">LOREM IPSUM <br /> CONSECTETUR ELIT.</h4>
+					<h4 class="b-section__subtitle">LOS PILARES SÓLIDOS <br />DE UN PROYECTO</h4>
 					<div class="b-section__text">
 						
-						  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.</p>
+						  <p>A pesar de ser la parte menos visible de un proyecto, consideramos que es una de las más importantes.</p>
 						
-						  <p>Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim.</p>
+						  <p>Un buen back end hará que tu sitio funcione mejor, por eso nos encargamos de realizar una buena base para tener unos pilares sólidos.</p>
+						
+						  <p>Realizamos proyectos en Drupal, Magento, Wordpress o Prestashop.</p>
 						
 					</div>
-					<a href="#" class="b-section__link">View more</a>
+					<a href="#contact" class="b-section__link">Contacta</a>
 				</div>
 			</div>
 			<div class="col-5">
@@ -271,21 +308,24 @@
 	</div>
 </section>
 
-    <section class="b-section ux">
+
+    <section class="b-section ux" id="ux">
 	<div class="container">
 		<div class="row no-gutters align-items-stretch  even  ">
 			<div class="col-7">
 				<div class="b-section__content">
 					<h3 class="b-section__title">UX</h3>
-					<h4 class="b-section__subtitle">LOREM IPSUM <br /> CONSECTETUR ELIT.</h4>
+					<h4 class="b-section__subtitle">UNA BUENA EXPERIENCIA <br />= CLIENTE SATISFECHO</h4>
 					<div class="b-section__text">
 						
-						  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.</p>
+						  <p>Se lo ponemos fácil a los usuarios, por eso le damos tanta importancia a la conceptualización y funcionalidad de un site.</p>
 						
-						  <p>Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim.</p>
+						  <p>Crear unos cimientos sólidos parten de un estudio centrado en nuestro target para que su experiencia sea la mejor, buscando siempre la mayor rentabilidad para nuestros clientes.</p>
+						
+						  <p>Prototipos, customer journey, investigación.</p>
 						
 					</div>
-					<a href="#" class="b-section__link">View more</a>
+					<a href="#contact" class="b-section__link">Contacta</a>
 				</div>
 			</div>
 			<div class="col-5">
@@ -297,21 +337,26 @@
 	</div>
 </section>
 
-    <section class="b-section design">
+
+    <section class="b-section design" id="design">
 	<div class="container">
 		<div class="row no-gutters align-items-stretch   odd ">
 			<div class="col-7">
 				<div class="b-section__content">
 					<h3 class="b-section__title">Diseño</h3>
-					<h4 class="b-section__subtitle">LOREM IPSUM <br /> CONSECTETUR ELIT.</h4>
+					<h4 class="b-section__subtitle">Y QUE SERÍA DE LA VIDA<br /> SIN COSAS BONITAS</h4>
 					<div class="b-section__text">
 						
-						  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.</p>
+						  <p>Además de la usabilidad y la experiencia de usuario, nada tendría sentido si no fuera fácil de digerir.</p>
 						
-						  <p>Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim.</p>
+						  <p>A esto nos ayuda el diseño, otro de nuestros pilares fundamentales y aspecto de gran importancia.</p>
+						
+						  <p>Nos gusta lo simple, sencillo pero con gusto. Para nosotros menos es más.</p>
+						
+						  <p>Realizamos branding, diseño web, banners y creatividades de todo tipo.</p>
 						
 					</div>
-					<a href="#" class="b-section__link">View more</a>
+					<a href="#contact" class="b-section__link">Contacta</a>
 				</div>
 			</div>
 			<div class="col-5">
@@ -323,21 +368,24 @@
 	</div>
 </section>
 
-    <section class="b-section strategy">
+
+    <section class="b-section strategy" id="strategy">
 	<div class="container">
 		<div class="row no-gutters align-items-stretch  even  ">
 			<div class="col-7">
 				<div class="b-section__content">
 					<h3 class="b-section__title">Estrategia</h3>
-					<h4 class="b-section__subtitle">LOREM IPSUM <br /> CONSECTETUR ELIT.</h4>
+					<h4 class="b-section__subtitle">TODO HA DE TENER<br /> UN SENTIDO</h4>
 					<div class="b-section__text">
 						
-						  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et turpis consequat, eleifend turpis ac, vehicula sapien. Ut vestibulum, mauris sit amet euismod tempus, metus turpis tempus diam, quis varius nisl urna eu magna.</p>
+						  <p>Cualquier proyecto tiene un fin, y éste es el que te ayudaremos a conseguir, trazando para ello los planes que mejor se adecuen a tus necesidades.</p>
 						
-						  <p>Ut euismod, nulla eu convallis molestie, nibh turpis molestie dui, dictum dignissim.</p>
+						  <p>Ponemos los medios necesarios para que alcances tus objetivos.</p>
+						
+						  <p>Realizamos planes de social media, estrategia online, SEO, SEM, etc.</p>
 						
 					</div>
-					<a href="#" class="b-section__link">View more</a>
+					<a href="#contact" class="b-section__link">Contacta</a>
 				</div>
 			</div>
 			<div class="col-5">
@@ -349,9 +397,13 @@
 	</div>
 </section>
 
-     <div class="b-contact">
+
+     <div class="b-contact" id="contact">
 	<div class="container">
 		<div class="row justify-content-center">
+			<div class="col-12">
+				<h2 class="b-contact__title">Contacto</h2>
+			</div>
 			<div class="col-6">
 				<form action="send-contact-form.php" method="post" id="flying_contact_form">
 					<div class="form-group">
@@ -359,15 +411,15 @@
 						<input type="type" name="contact_name" id="contact_name" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label for="contact_phone">Phone</label>
+						<label for="contact_phone">Teléfono</label>
 						<input type="type" name="contact_phone" id="phone" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label for="contact_email">Email address</label>
+						<label for="contact_email">Dirección email</label>
 						<input type="type" name="contact_email" id="contact_email" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label for="contact_message">Enter your message</label>
+						<label for="contact_message">Mensaje</label>
 						<textarea name="contact_message" id="contact_message" class="form-control"></textarea>
 					</div>
 					<div class="form-group">
@@ -412,6 +464,7 @@
 	</div>
 </footer>
 
+	
   	  	<script async src="js/async.js"></script>
 
  </body>

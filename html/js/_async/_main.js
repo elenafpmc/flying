@@ -163,6 +163,28 @@ $(function() {
 
 
 	/*	--------------------------------------------------
+		Menu click + smooth scroll
+	-------------------------------------------------- */
+	$('a[href^="#"]').on('click', function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+			var distance = $target.offset().top - 80;
+			if( distance < 0 ){
+				distance = 0;
+			}
+
+	    $('html, body').stop().animate({
+	      'scrollTop': distance
+	    }, 900, 'swing', function () {
+				// Callback
+			});
+			$('body').removeClass('offcanvas-active');
+	});
+
+
+	/*	--------------------------------------------------
 		Isotope init
 	-------------------------------------------------- */
 	if ($('.b-projects').length){

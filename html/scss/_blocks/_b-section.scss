@@ -41,7 +41,7 @@
 		margin-bottom: 0;
 	}
 	&__text {
-			
+
 		p {
 			font-family: $font-family-base;
 			font-size: 1.6rem; line-height: 2.5rem;
@@ -54,13 +54,20 @@
 	&__link {
 		border-bottom: 3px solid $color-white;
 		display: inline-block;
-	
+
 		font-family: $font-family-base;
 		font-size: 1.2rem; line-height: 2.6rem;
 		font-weight: 900;
 		color: $color-white;
 		text-transform: uppercase;
+		text-decoration: none;
 		letter-spacing: 1.85px;
+		transition: all 0.3s ease-out 0s;
+
+		&:hover {
+			color: $color-white;
+			text-decoration: none;
+		}
 	}
 	&.frontend {
 		background: linear-gradient(to right, $color-pink-dark 0%, $color-pink-dark 50%,#000000 50%, $color-pink 50%, $color-pink 100%);
@@ -113,6 +120,9 @@
 	.odd {
 		.b-section__title {
 			margin-left: 0;
+		}
+		.b-section__text {
+			padding-right: 20px;
 		}
 	}
 }

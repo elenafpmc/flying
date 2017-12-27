@@ -15,7 +15,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<![endif]-->
 
-    <title></title>
+    <title>Flying Pigs</title>
     <meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="author" content="">
@@ -87,15 +87,27 @@
 		<![endif]-->
 		<!-- /HTML5 IE8 -->
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M4C8HQC');</script>
+    <!-- End Google Tag Manager -->
+
     </head>
     <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4C8HQC"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
 
 
 	<header class="header header--primary header--placehold">
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="#main">
 					<img src="svg/logo.svg" alt="Flying Pigs">
 				</a>
 			</div>
@@ -119,28 +131,28 @@
 
 						<ul class="menu-list">
 							<li>
-								<a href="#">About us</a>
+								<a href="#aboutus" data-text="About us">About us</a>
 							</li>
 							<li>
-								<a href="#">Front end</a>
+								<a href="#frontend" data-text="Front end">Front end</a>
 							</li>
 							<li>
-								<a href="#">Back end</a>
+								<a href="#backend" data-text="Back end">Back end</a>
 							</li>
 							<li>
-								<a href="#">UX</a>
+								<a href="#ux" data-text="UX">UX</a>
 							</li>
 							<li>
-								<a href="#">Diseño</a>
+								<a href="#design" data-text="Diseño">Diseño</a>
 							</li>
 							<li>
-								<a href="#">Estrategia</a>
+								<a href="#strategy" data-text="Estrategia">Estrategia</a>
 							</li>
+							<!-- <li>
+								<a href="#" data-text="Proyectos">Proyectos</a>
+							</li> -->
 							<li>
-								<a href="#">Proyectos</a>
-							</li>
-							<li>
-								<a href="#">Contacto</a>
+								<a href="#contact" data-text="Contacto">Contacto</a>
 							</li>
 						</ul>
 
@@ -157,9 +169,12 @@
 
 	<main class="wrapper" role="main">
 
-     <div class="b-contact">
+     <div class="b-contact" id="contact">
 	<div class="container">
 		<div class="row justify-content-center">
+			<div class="col-12">
+				<h2 class="b-contact__title">Contacto</h2>
+			</div>
 			<div class="col-6">
 				<form action="send-contact-form.php" method="post" id="flying_contact_form">
 					<div class="form-group">
@@ -167,15 +182,15 @@
 						<input type="type" name="contact_name" id="contact_name" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label for="contact_phone">Phone</label>
+						<label for="contact_phone">Teléfono</label>
 						<input type="type" name="contact_phone" id="phone" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label for="contact_email">Email address</label>
+						<label for="contact_email">Dirección email</label>
 						<input type="type" name="contact_email" id="contact_email" class="form-control" />
 					</div>
 					<div class="form-group">
-						<label for="contact_message">Enter your message</label>
+						<label for="contact_message">Mensaje</label>
 						<textarea name="contact_message" id="contact_message" class="form-control"></textarea>
 					</div>
 					<div class="form-group">

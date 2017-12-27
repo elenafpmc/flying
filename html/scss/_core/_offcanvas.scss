@@ -39,10 +39,59 @@
 				font-size: 2rem;
 				color: $color-black;
 				a {
+					position: relative;
 					display: inline-block;
 					padding: 0 15px;
 					color: $color-black;
 					line-height: 8rem;
+					text-decoration: none;
+					cursor: pointer;
+
+					&:before {
+						position: absolute;
+				    content: attr(data-text);
+				    color: #ffffff;
+				    left: -10px;
+				    right: -10px;
+				    text-indent: 25px;
+						text-align: left;
+				    top: 0px;
+						bottom: 0;
+				    z-index: 2;
+				    overflow: hidden;
+				    width: 0;
+				    white-space: nowrap;
+				    transition: width .6s cubic-bezier(0.55, 0, 0.1, 1);
+				    //transition: width .55s ease-in-out 0.05s;
+				    will-change: width;
+					}
+					&:after {
+						content: '';
+				    display: block;
+				    position: absolute;
+				    top: 10px;
+				    right: -10px;
+				    bottom: 10px;
+				    left: -10px;
+				    z-index: 1;
+				    background-color: $color-primary;
+						transform-origin: left;
+				    transform: translate3d(0,0,0) scale3d(0,1,1);
+				    transition: transform .6s cubic-bezier(0.55, 0, 0.1, 1);
+				    //transition: transform .55s ease-in-out 0.05s;
+						will-change: transform;
+					}
+
+					&:hover {
+						text-decoration: none;
+
+						&:before {
+							width: calc(100% + 20px);
+						}
+						&:after {
+							transform: translate3d(0,0,0) scale3d(1,1,1);
+						}
+					}
 				}
 				&:before {
 					display: none;
