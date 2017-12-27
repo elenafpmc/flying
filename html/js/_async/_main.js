@@ -165,6 +165,10 @@ $(function() {
 	/*	--------------------------------------------------
 		Menu click + smooth scroll
 	-------------------------------------------------- */
+	if (window.location.hash != ''){
+		window.scrollBy(0, -80);
+		window.location.hash = null;
+	}
 	$('a[href^="#"]').on('click', function (e) {
 	    e.preventDefault();
 
