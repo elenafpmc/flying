@@ -10,6 +10,10 @@
 
 		padding-bottom: 40px;
 		margin-right: 0;
+
+		@media(max-width: 767px){
+			font-size: 4.5rem;
+		}
 	}
 	&__parr {
 		font-family: $font-family-base;

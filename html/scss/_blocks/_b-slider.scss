@@ -37,12 +37,18 @@
       text-align: center;
       z-index: 3;
 
+      @media(max-width: 767px){
+        padding: 20px;
+      }
+
       &--top {
         top: 10%;
+        transform: none;
       }
       &--bottom {
         top: auto;
         bottom: 10%;
+        transform: none;
       }
 
       &__title {
@@ -53,6 +59,15 @@
         color: $color-white;
         text-align: center;
         margin-bottom: 5px;
+
+        @media(max-width: 767px){
+          font-size: 4.5rem;
+          line-height: 5rem;
+        }
+        @media(max-width: 576px){
+          font-size: 3rem;
+          line-height: 3.5rem;
+        }
       }
       &__sub {
         font-family: $font-family-base;
@@ -249,6 +264,23 @@
     }
   }
 
+  .flyingpig_responsive_holder{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    transform-origin: 50% 20%;
+
+    @media (max-width: 991px) {
+      transform: scale(0.75);
+    }
+    @media (max-width: 767px) {
+      transform: scale(0.5);
+    }
+  }
 
   .flyingpig {
     display: inline-block;

@@ -41,6 +41,7 @@
 		margin-bottom: 0;
 	}
 	&__text {
+		padding: 0 20px 20px;
 
 		p {
 			font-family: $font-family-base;
@@ -116,13 +117,17 @@
 	}
 	.even {
 		flex-direction: row-reverse;
+
+		.b-section__text {
+			padding-left: 136px;
+		}
 	}
 	.odd {
 		.b-section__title {
 			margin-left: 0;
 		}
 		.b-section__text {
-			padding-right: 20px;
+			padding-left: 101px;
 		}
 	}
 }
