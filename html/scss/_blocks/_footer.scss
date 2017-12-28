@@ -2,10 +2,21 @@
 	height: 90px;
 	padding-top: 28px;
 	padding-bottom: 28px;
+
+	@media (max-width: 767px) {
+		text-align: center;
+	}
+
 	ul.rrss {
 		margin: 0;
 		padding: 0;
 		float: right;
+
+		@media (max-width: 767px) {
+			display: block;
+			padding: 10px 0;
+			float: none;
+		}
 		li {
 			display: inline-block;
 			margin: 0;

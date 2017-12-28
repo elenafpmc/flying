@@ -1,6 +1,11 @@
 .b-about {
 	background-color: $color-white;
 	padding: 45px;
+
+	@media(max-width: 767px){
+		padding: 45px 0;
+	}
+
 	&__title {
 		font-family: $font-family-title;
 		font-size: 6rem;
