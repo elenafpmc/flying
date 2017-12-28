@@ -122,6 +122,15 @@
       filter: drop-shadow(0 2px 4px rgba(0,0,0,0.33));
       will-change: left;
       left: -15%;
+
+      @media (max-width: 991px) {
+        transform: scale(0.7) translate3d(-50%, -50px, 0.1px);
+        left: -30%;
+      }
+      @media (max-width: 767px) {
+        transform: scale(0.4) translate3d(-50%, -50px, 0.1px);
+        left: -60%
+      }
     }
 
     .cloud--1 {
@@ -250,6 +259,13 @@
       0% {
         left: -15%;
         opacity: 0.1;
+
+        @media(max-width: 991px){
+          left: -30%;
+        }
+        @media(max-width: 767px){
+          left: -60%;
+        }
       }
       20% {
         opacity: 1;
@@ -260,6 +276,13 @@
       100% {
         left: 115%;
         opacity: 0.1;
+
+        @media(max-width: 991px){
+          left: 130%;
+        }
+        @media(max-width: 767px){
+          left: 160%;
+        }
       }
     }
   }
@@ -278,7 +301,7 @@
       transform: scale(0.7);
     }
     @media (max-width: 767px) {
-      transform: scale(0.4);
+      transform: scale(0.35);
     }
   }
 
