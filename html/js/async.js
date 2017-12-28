@@ -5038,8 +5038,10 @@ $(function() {
 				el: '.swiper-pagination',
 				type: 'bullets',
 				clickable: true,
-
-			}
+			},
+			autoplay: {
+    		delay: 7000,
+  		}
 	});
 
 
