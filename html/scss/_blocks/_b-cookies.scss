@@ -1,3 +1,41 @@
 .b-cookies {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  background-color: rgba($color-white, 0.85);
+  box-shadow: 0 -2px 4px rgba($color-black, 0.1);
+  z-index: 99;
 
+  &__close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: block;
+    height: 16px;
+    width: 16px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    padding: 1px 0;
+    color: $color-black;
+    border: 1px solid $color-black;
+    border-radius: 50%;
+    cursor: pointer;
+
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+
+    a {
+      color: $color-black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
 }
