@@ -54,9 +54,6 @@ $(function() {
 				contact_name: {
 					required: true
 				},
-				contact_phone: {
-					required: true
-				},
 				contact_email: {
 					required:true,
 					email: true
@@ -71,9 +68,6 @@ $(function() {
 			messages: {
 				contact_name: {
 					required: 'Por favor indique su nombre.'
-				},
-				contact_phone: {
-					required: 'Por favor indique un teléfono de contacto.'
 				},
 				contact_email: {
 					required: 'Por favor indique un email de contacto',
