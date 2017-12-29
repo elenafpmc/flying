@@ -5113,6 +5113,10 @@ $(function() {
 			}
 		}, '');
 
+		$.validator.addMethod('legalCheck', function (value, element) {
+			return $('[name="contact_legal"]').is(':checked');
+		}, '');
+
 		$('#flying_contact_form').validate({
 			errorClass: "error-label",
 			errorElement: 'p',
@@ -5127,6 +5131,9 @@ $(function() {
 				contact_message: {
 					required: true
 				},
+				contact_legal: {
+					legalCheck: true
+				}
 				// recaptchaHidden:{
 				// 	recaptchaCheck: true
 				// }
@@ -5142,6 +5149,9 @@ $(function() {
 				contact_message: {
 					required: 'Por favor escriba un mensaje.'
 				},
+				contact_legal: {
+					legalCheck: 'Por favor acepte la politica de privacidad.'
+				}
 				// recaptchaHidden:{
 				// 	recaptchaCheck: 'Por favor haga click en el reCaptcha.'
 				// }

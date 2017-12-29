@@ -129,6 +129,8 @@
 		display: block;
 		height: 1px;
 		width: 1px;
+		bottom: 0;
+		left:0;
 		padding: 0;
 		margin: 0;
 		opacity: 0;
@@ -205,6 +207,14 @@
 		&::after {
 			transform: scale(1) rotate(-45deg);
 		}
+	}
+	p.error-label {
+		position: absolute;
+		top: 100%;
+		left: 0;
+	}
+	p.error-label ~ .form-check-label{
+		margin-bottom: 40px;
 	}
 }
 
