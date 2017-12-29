@@ -34,10 +34,11 @@
       top: 50%;
       transform: translateY(-50%);
       padding: 20px 100px;
+      font-family: $font-family-title;
       text-align: center;
       z-index: 3;
 
-      @media(max-width: 767px){
+      @media(max-width: $screen-xs-max){
         padding: 10px;
       }
 
@@ -45,10 +46,10 @@
         top: 10%;
         transform: none;
 
-        @media (max-width: 991px){
+        @media (max-width: $screen-sm-max){
           top: 6%;
         }
-        @media (max-width: 767px){
+        @media (max-width: $screen-xs-max){
           top: 3%;
         }
       }
@@ -57,16 +58,15 @@
         bottom: 10%;
         transform: none;
 
-        @media (max-width: 991px){
+        @media (max-width: $screen-sm-max){
           bottom: 6%;
         }
-        @media (max-width: 767px){
+        @media (max-width: $screen-xs-max){
           bottom: 3%;
         }
       }
 
       &__title {
-        font-family: $font-family-base;
         font-size: 6rem;
         line-height: 6.5rem;
         font-weight: 900;
@@ -74,7 +74,7 @@
         text-align: center;
         margin-bottom: 5px;
 
-        @media(max-width: 767px){
+        @media(max-width: $screen-xs-max){
           font-size: 4.5rem;
           line-height: 5rem;
         }
@@ -84,7 +84,6 @@
         }
       }
       &__sub {
-        font-family: $font-family-base;
         font-size: 2.5rem;
         line-height: 3rem;
         font-weight: 400;
@@ -137,11 +136,11 @@
       will-change: left;
       left: -15%;
 
-      @media (max-width: 991px) {
+      @media (max-width: $screen-sm-max) {
         transform: scale(0.7) translate3d(-50%, -50px, 0.1px);
         left: -30%;
       }
-      @media (max-width: 767px) {
+      @media (max-width: $screen-xs-max) {
         transform: scale(0.4) translate3d(-50%, -50px, 0.1px);
         left: -60%
       }
@@ -274,10 +273,10 @@
         left: -15%;
         opacity: 0.1;
 
-        @media(max-width: 991px){
+        @media(max-width: $screen-sm-max){
           left: -30%;
         }
-        @media(max-width: 767px){
+        @media(max-width: $screen-xs-max){
           left: -60%;
         }
       }
@@ -291,10 +290,10 @@
         left: 115%;
         opacity: 0.1;
 
-        @media(max-width: 991px){
+        @media(max-width: $screen-sm-max){
           left: 130%;
         }
-        @media(max-width: 767px){
+        @media(max-width: $screen-xs-max){
           left: 160%;
         }
       }
@@ -311,10 +310,10 @@
     z-index: 2;
     transform-origin: 50% 35%;
 
-    @media (max-width: 991px) {
+    @media (max-width: $screen-sm-max) {
       transform: scale(0.6);
     }
-    @media (max-width: 767px) {
+    @media (max-width: $screen-xs-max) {
       transform: scale(0.3);
     }
   }

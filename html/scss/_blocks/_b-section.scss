@@ -3,6 +3,15 @@
 
 	> .container-fluid {
 		padding: 0;
+
+		.even,
+		.odd {
+			flex-wrap: nowrap;
+
+			@media(max-width: $screen-xs-max){
+				flex-wrap: wrap;
+			}
+		}
 	}
 
 	&__content {
@@ -12,7 +21,7 @@
 		padding: 80px 0;
 		padding-left: 115px;
 
-		@media (max-width: 767px) {
+		@media (max-width: $screen-xs-max) {
 			padding-left: 0;
 		}
 	}
@@ -23,7 +32,8 @@
 		text-align: center;
 		vertical-align: middle;
 		.icon {
-
+			display: block;
+			max-width: 100%;
 		}
 	}
 
@@ -50,7 +60,7 @@
 		padding: 0 35px;
 		margin: 0;
 
-		@media (max-width: 767px){
+		@media (max-width: $screen-xs-max){
 			position: relative;
 			font-size: 4.5rem;
 			float: none;
@@ -69,10 +79,10 @@
 		color: $color-white;
 		letter-spacing: 3px;
 
-		padding: 0 20px 40px;
+		padding: 0 20px 30px;
 		margin-bottom: 0;
 
-		@media (max-width: 767px){
+		@media (max-width: $screen-xs-max){
 			text-align: center;
 
 			br {
@@ -88,8 +98,8 @@
 			font-size: 1.6rem; line-height: 2.5rem;
 			font-weight: 400;
 			color: $color-white;
-
-			padding-bottom: 10px;
+			margin: 0;
+			padding-bottom: 15px;
 		}
 	}
 	&__link {
@@ -103,6 +113,7 @@
 		text-decoration: none;
 		letter-spacing: 1.85px;
 		transition: all 0.3s ease-out 0s;
+		padding-top: 20px;
 
 		&::after {
 			content: '';
@@ -175,10 +186,10 @@
 		.b-section__content {
 			padding-right: 15%;
 
-			@media (max-width: 991px) {
+			@media (max-width: $screen-sm-max) {
 				padding-right: 5%;
 			}
-			@media (max-width: 767px) {
+			@media (max-width: $screen-xs-max) {
 				padding-right: 0;
 			}
 		}
@@ -188,11 +199,11 @@
 			width: 85%;
 			margin-left: 15%;
 
-			@media (max-width: 991px) {
+			@media (max-width: $screen-sm-max) {
 				width: 95%;
 				margin-left: 5%;
 			}
-			@media (max-width: 767px) {
+			@media (max-width: $screen-xs-max) {
 				width: 100%;
 				margin-left: 0;
 			}

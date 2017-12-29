@@ -31,7 +31,6 @@
     border: 1px solid $color-black;
     border-radius: 50%;
     cursor: pointer;
-
   }
 
   p {
@@ -49,4 +48,64 @@
       }
     }
   }
+}
+#cookiesModal {
+  .modal-content {
+    border: none;
+    border-radius: 1px;
+  }
+  .modal-header {
+    .modal-title {
+      font-family: $font-family-title;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      color: $color-black;
+      font-weight: 400;
+    }
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: block;
+      height: 16px;
+      width: 16px;
+      font-size: 16px;
+      line-height: 16px;
+      text-align: center;
+      color: $color-black;
+      border: 1px solid $color-black;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+  .modal-body {
+    p,
+    ul li {
+      font-family: $font-family-base;
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+      color: $color-black;
+      font-weight: 400;
+
+      &.title {
+        padding-top: 20px;
+        font-family: $font-family-title;
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+    a {
+      color: $color-primary;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease-out 0s;
+
+      &:hover {
+        text-decoration: none;
+        border-bottom-color: $color-primary
+      }
+    }
+  }
+}
+.modal-backdrop.fade.show {
+  opacity: 0.5;
 }

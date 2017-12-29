@@ -3,35 +3,49 @@
 	padding-top: 28px;
 	padding-bottom: 28px;
 
-	@media (max-width: 767px) {
+	@media (max-width: $screen-xs-max) {
 		text-align: center;
 	}
 
 	ul.rrss {
+		display: inline-block;
+		height: 30px;
 		margin: 0;
+		margin-left: 20px;
 		padding: 0;
 		float: right;
 
-		@media (max-width: 767px) {
+		@media (max-width: $screen-xs-max) {
 			display: block;
 			padding: 10px 0;
 			float: none;
+			margin: 0;
 		}
 		li {
 			display: inline-block;
 			margin: 0;
-			padding: 3px 0;
+
 			a {
 				display: block;
 				background-color: transparent;
 				border: none;
-				padding: 5px;
+				padding: 0 5px;
 				outline: none !important;
 				cursor: pointer;
+
 				.icon {
 					display: block;
-					height: 23px;
-					width: 23px;
+					height: 30px;
+					width: 30px;
+					fill: $color-black;
+					color: $color-black;
+				}
+
+				&:hover {
+					.icon {
+						fill: $color-primary;
+						color: $color-primary;
+					}
 				}
 			}
 			&:before {
