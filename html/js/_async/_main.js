@@ -35,6 +35,25 @@ svg4everybody();
 -------------------------------------------------- */
 $(function() {
 
+	/*	--------------------------------------------------
+		Cookies
+	-------------------------------------------------- */
+	var flying_cookie = Cookies.get('flyingpigs');
+	if (flying_cookie){
+		$('.b-cookies').removeClass('active');
+	}
+	else{
+		$('.b-cookies').addClass('active');
+	}
+
+	$('.b-cookies__close').on('click', function(){
+		$('.b-cookies').removeClass('active');
+		Cookies.set('flyingpigs', true, { expires: 30 });
+	});
+
+	/*	--------------------------------------------------
+		Contact form validation + handler
+	-------------------------------------------------- */
 	if ($('#flying_contact_form').length) {
 
 		$.validator.addMethod('recaptchaCheck', function (value, element) {
@@ -125,7 +144,6 @@ $(function() {
 	/*	--------------------------------------------------
 		Clase del header según scroll
 	-------------------------------------------------- */
-
 	$header = $('.header');
 	if ($header.hasClass('header--light')){
 		$(window).scroll(function () {
@@ -141,7 +159,6 @@ $(function() {
 		}
 	}
 
-
 	/*	--------------------------------------------------
 		Swiper init
 	-------------------------------------------------- */
@@ -156,7 +173,6 @@ $(function() {
     		delay: 7000,
   		}
 	});
-
 
 	/*	--------------------------------------------------
 		Menu click + smooth scroll
@@ -181,7 +197,6 @@ $(function() {
 			});
 			$('body').removeClass('offcanvas-active');
 	});
-
 
 	/*	--------------------------------------------------
 		Isotope init
@@ -214,7 +229,6 @@ $(function() {
 
 	});
 
-
 	/*	--------------------------------------------------
 		Mostrar una capa
 	-------------------------------------------------- */
@@ -233,7 +247,6 @@ $(function() {
 
 	});
 
-
 	/*	--------------------------------------------------
 		Ocultar una capa
 	-------------------------------------------------- */
@@ -241,7 +254,6 @@ $(function() {
 		var layerToHide = $(this).attr('data-hide');
 		$(layerToHide).addClass('hidden');
 	});
-
 
 	/*	--------------------------------------------------
 		Video players
@@ -257,22 +269,17 @@ $(function() {
 
 	});
 
-
 	/*	--------------------------------------------------
 		Llamada de funciones
 	-------------------------------------------------- */
 	initAsync();
-
 
 	/*	--------------------------------------------------
 		Llamada de funciones en resize
 	-------------------------------------------------- */
 	$( window ).on('resize', function() {
 
-
-
 	});
-
 
 	/*	--------------------------------------------------
 		Llamada de funciones al abrir modales
