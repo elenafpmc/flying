@@ -7,49 +7,86 @@
 		text-align: center;
 	}
 
-	ul.rrss {
-		display: inline-block;
-		height: 30px;
-		margin: 0;
-		margin-left: 20px;
-		padding: 0;
-		float: right;
+	.footer__menu {
+		text-align: right;
 
-		@media (max-width: $screen-xs-max) {
-			display: block;
-			padding: 10px 0;
-			float: none;
-			margin: 0;
-		}
-		li {
+		ul.rrss {
 			display: inline-block;
+			height: 30px;
 			margin: 0;
+			margin-left: 30px;
+			padding: 0;
+			float: right;
 
-			a {
+			@media (max-width: $screen-xs-max) {
 				display: block;
-				background-color: transparent;
-				border: none;
-				padding: 0 5px;
-				outline: none !important;
-				cursor: pointer;
+				padding: 10px 0;
+				float: none;
+				margin: 0;
+			}
+			li {
+				display: inline-block;
+				margin: 0;
 
-				.icon {
+				a {
 					display: block;
-					height: 30px;
-					width: 30px;
-					fill: $color-black;
-					color: $color-black;
-				}
+					background-color: transparent;
+					border: none;
+					padding: 0 5px;
+					outline: none !important;
+					cursor: pointer;
 
-				&:hover {
 					.icon {
-						fill: $color-primary;
-						color: $color-primary;
+						display: block;
+						height: 30px;
+						width: 30px;
+						fill: $color-black;
+						transition: fill 0.3s ease-out 0s;
+					}
+
+					&:hover {
+						.icon {
+							fill: $color-primary;
+						}
 					}
 				}
+				&:before {
+					display: none;
+				}
 			}
-			&:before {
-				display: none;
+		}
+
+		&__link {
+			display: inline-block;
+			position: relative;
+			text-align: center;
+	    text-transform: uppercase;
+	    font-family: $font-family-base;
+	    font-weight: 800;
+	    font-size: 1.4rem;
+			line-height: 30px;
+	    color: #202020;
+			padding:0;
+			margin-left: 10px;
+			cursor: pointer;
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: 2px;
+				left: 0;
+				width: 0;
+				height: 2px;
+				background-color: $color-black;
+				transition: all 0.3s ease-in-out 0s;
+			}
+
+			&:hover {
+				text-decoration: none;
+				&:after {
+					width: 100%;
+				}
 			}
 		}
 	}

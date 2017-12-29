@@ -119,6 +119,95 @@
 	}
 }
 
+.form-check {
+	display: block;
+	position: relative;
+	margin-bottom: 1rem;
+
+	.form-check-input {
+		position: absolute;
+		display: block;
+		height: 1px;
+		width: 1px;
+		padding: 0;
+		margin: 0;
+		opacity: 0;
+	}
+	.form-check-label {
+		display: block;
+		position: relative;
+		padding-left: 30px;
+		min-height: 30px;
+		line-height: 30px;
+		cursor: pointer;
+		font-family: $font-family-base;
+		font-size: 1.4rem;
+		color: $color-black;
+
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			height: 24px;
+			width: 24px;
+			top: 3px;
+			left: 0;
+			border: 2px solid $color-black-50;
+			transition: all 0.3s ease-out 0s;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 9px;
+			left: 5px;
+			height: 8px;
+			width: 14px;
+			border-left: 2px solid $color-white;
+			border-bottom: 2px solid $color-white;
+			transform-origin: 50% 50%;
+			transform: scale(0) rotate(0deg);
+			transition: all 0.20s ease-out 0.05s;
+		}
+
+		a {
+			display: inline-block;
+			position: relative;
+			color: $color-primary;
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: 5px;
+				left: 0;
+				width: 0;
+				height: 1px;
+				background-color: $color-primary;
+				transition: all 0.3s ease-out 0s;
+			}
+
+			&:hover {
+				color: $color-primary;
+				text-decoration: none;
+
+				&:after {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.form-check-input:checked ~ .form-check-label{
+		&:before {
+			border-color: $color-primary;
+			background-color: $color-primary;
+		}
+		&::after {
+			transform: scale(1) rotate(-45deg);
+		}
+	}
+}
+
 .error-label {
 	display: block;
 	color: rgb(220, 50, 50);
