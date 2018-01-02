@@ -18,6 +18,20 @@
     &--no-overlay:before {
       display: none;
     }
+    &.pigs {
+      .top-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #FF1B77;
+        height: 83px;
+        z-index: 2;
+        // @media ( max-width: 767px ) {
+        //   display: none;
+        // }
+      }
+    }
 
     &__img {
       display: block;

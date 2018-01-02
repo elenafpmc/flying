@@ -1,5 +1,5 @@
 .b-contact {
-	padding: 45px 0 75px 0;
+	padding: 0 0 75px 0;
 
 	&__title {
 		font-family: "PaytoneOne";
@@ -15,6 +15,16 @@
 			font-size: 4.5rem;
 		}
 	}
+  &__parr {
+    font-family: $font-family-base;
+    font-size: 1.6rem; line-height: 2.1rem;
+    color: $color-black;
+    font-weight: 400;
+    text-align: center;
+
+    margin: 0;
+    padding-bottom: 10px;
+  }
 
 	.fade-in-submit {
 		display: block;
@@ -22,6 +32,12 @@
 		line-height: 2.2rem;
 		font-weight: 400;
 	}
+
+  .cnt-map {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 45px;
+  }
 }
 
 #privacyModal {
@@ -30,6 +46,11 @@
     border-radius: 1px;
   }
   .modal-header {
+    border-bottom: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 0;
     .modal-title {
       font-family: $font-family-title;
       font-size: 2.5rem;
@@ -42,19 +63,22 @@
       top: 15px;
       right: 15px;
       display: block;
-      height: 16px;
-      width: 16px;
-      font-size: 16px;
-      line-height: 16px;
+      height: 46px;
+      width: 46px;
+      font-size: 46px;
+      line-height: 46px;
       text-align: center;
       color: $color-black;
-      border: 1px solid $color-black;
-      border-radius: 50%;
+      // border: 1px solid $color-black;
+      // border-radius: 50%;
       cursor: pointer;
       padding-left: 1px;
     }
   }
   .modal-body {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     p,
     ul li {
       font-family: $font-family-base;
@@ -79,6 +103,11 @@
         text-decoration: none;
         border-bottom-color: $color-primary
       }
+    }
+  }
+  .modal-dialog {
+    @media ( min-width: 576px ) and ( max-width: 1199px ) {
+      max-width: 90%;
     }
   }
 }
