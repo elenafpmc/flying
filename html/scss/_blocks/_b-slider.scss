@@ -112,6 +112,26 @@
     }
   }
 
+  .btn-about {
+    background-color: transparent;
+    width: 30px;
+    height: 42px;
+    padding: 0;
+    color: $color-black;
+    border: 0;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 5;
+    pointer-events: all;
+    svg {
+      color: $color-black;
+      fill: $color-black;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .swiper-pagination {
     z-index: 4;
   }
