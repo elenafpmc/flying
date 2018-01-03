@@ -39,6 +39,9 @@
     margin-bottom: 45px;
   }
   .cnt-contacta {
+    @media(max-width: $screen-xs-max) {
+      margin-bottom: 40px;
+    }
     a {
       display: inline-block;
       position: relative;
