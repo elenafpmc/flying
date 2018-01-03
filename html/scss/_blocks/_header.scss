@@ -62,3 +62,10 @@
 		}
 	}
 }
+
+// FIX SAFARI
+.row {
+	&:before {
+		display: none
+	}
+}
