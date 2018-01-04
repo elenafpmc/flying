@@ -446,6 +446,43 @@ function ejemploTemplate(){
 
 	
 }
+
+	/*	--------------------------------------------------
+		Contact map
+	-------------------------------------------------- */
+
+	function initMap() {
+		var flyingpigs = {lat: 40.4489199, lng: -3.7012286 };
+		var pig = {
+			url: 'img/flyingpig-pig-pink.png',
+			size: new google.maps.Size(50, 50),
+			origin: new google.maps.Point(0, 0),
+			anchor: new google.maps.Point(25, 50)
+		};
+		
+	 	var BNstyledMapType = new google.maps.StyledMapType([
+		    {
+		        featureType: "all",
+		        elementType: "all",
+		        stylers: [
+		            { saturation: -100 }
+		        ]
+		    }
+		]);
+		var map = new google.maps.Map(document.getElementById('map'), {
+		  	zoom: 17,
+		  	center: flyingpigs,
+		  	mapTypeId: google.maps.MapTypeId.ROADMAP
+		});
+
+		map.mapTypes.set('styled_map', BNstyledMapType);
+        map.setMapTypeId('styled_map');
+		var marker = new google.maps.Marker({
+		  	position: flyingpigs,
+		  	map: map,
+		  	icon: pig
+		});
+  	}
 	
 	
 	
