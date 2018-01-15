@@ -6,7 +6,6 @@
     font-size: 6rem;
     font-weight: 900;
     color: #202020;
-    text-align: center;
 		text-transform: uppercase;
     padding-bottom: 40px;
     margin: 0;
@@ -20,8 +19,6 @@
     font-size: 1.6rem; line-height: 2.1rem;
     color: $color-black;
     font-weight: 400;
-    text-align: center;
-
     margin: 0;
     padding-bottom: 10px;
   }
@@ -36,7 +33,7 @@
   .cnt-map {
     height: 400px;
     width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 60px;
   }
   .cnt-contacta {
     @media(max-width: $screen-xs-max) {
