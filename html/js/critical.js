@@ -444,7 +444,7 @@ window.addEventListener("resize", initCriticalHelpers);
 
 function ejemploTemplate(){
 
-	
+
 }
 
 	/*	--------------------------------------------------
@@ -452,14 +452,14 @@ function ejemploTemplate(){
 	-------------------------------------------------- */
 
 	function initMap() {
-		var flyingpigs = {lat: 40.4489199, lng: -3.7012286 };
+		var flyingpigs = {lat: 40.433414, lng: -3.686472 };
 		var pig = {
 			url: 'img/flyingpig-pig-pink.png',
 			size: new google.maps.Size(50, 50),
 			origin: new google.maps.Point(0, 0),
 			anchor: new google.maps.Point(25, 50)
 		};
-		
+
 	 	var BNstyledMapType = new google.maps.StyledMapType([
 		    {
 		        featureType: "all",
@@ -483,23 +483,22 @@ function ejemploTemplate(){
 		  	icon: pig
 		});
   	}
-	
-	
-	
+
+
+
 /*	--------------------------------------------------
 	Llamada de funciones
 -------------------------------------------------- */
 function initMainCritical(){
 	//Añadimos aqui las funciones declaradas arriba
-	ejemploTemplate();	
+	ejemploTemplate();
 }
 //Esperamos a que el DOM este cargado...
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function(event) {
 
 	initMainCritical();
-	
+
 	//Recarga si Resize
-	window.addEventListener("resize", initMainCritical);			
+	window.addEventListener("resize", initMainCritical);
 
 });
-
