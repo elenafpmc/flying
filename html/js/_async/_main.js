@@ -86,10 +86,10 @@ $(function() {
 				},
 				contact_legal: {
 					legalCheck: true
+				},
+				recaptchaHidden:{
+					recaptchaCheck: true
 				}
-				// recaptchaHidden:{
-				// 	recaptchaCheck: true
-				// }
 			},
 			messages: {
 				contact_name: {
@@ -104,10 +104,10 @@ $(function() {
 				},
 				contact_legal: {
 					legalCheck: 'Por favor acepte la politica de privacidad.'
+				},
+				recaptchaHidden:{
+					recaptchaCheck: 'Por favor haga click en el reCaptcha.'
 				}
-				// recaptchaHidden:{
-				// 	recaptchaCheck: 'Por favor haga click en el reCaptcha.'
-				// }
 			},
 			submitHandler: function(){
 				$('.fade-out-submit').fadeOut(300);
