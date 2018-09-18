@@ -22,9 +22,11 @@
 			background-color: $color-primary !important;
 		}
 	}
+
 	&--primary {
-		background-color: $color-primary;		
+		background-color: $color-primary;
 	}
+
 	&--placehold + main {
 		margin-top: 83px;
 	}
@@ -32,6 +34,10 @@
 	.navbar-brand {
 		padding: 0;
 		margin: 0;
+
+		h1 {
+			margin: 0;
+		}
 	}
 
 	button.navbar-toggle {
@@ -68,6 +74,19 @@
 				transform-origin: 0% 100%;
 			}
 		}
+	}
+
+	.seo-hide {
+		position: absolute;
+		display: inline-block;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+		clip: rect(1px,1px,1px,1px);
+		color: #FFFFFF;
+		border: 0;
+	  padding: 0;
+	  margin: 0;
 	}
 }
 

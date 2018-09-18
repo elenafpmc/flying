@@ -18,7 +18,7 @@ $contact_message = $_POST["contact_message"];
 
 $email_smtp = "smtp.serviciodecorreo.es";
 $email_user = "hola@flyingpigs.es";
-$email_pass = "Flying2017";
+$email_pass = "Rmx5aW5nMjAxOEhp";
 $email_name = "Flying Pigs";
 
 $sentUs = false;
@@ -27,12 +27,12 @@ $sentClient = false;
 $mailUs = new PHPMailer(true);
 try {
   // Server settings
-  // $mail->SMTPDebug = 3;                                   // Enable verbose debug output
+  // $mail->SMTPDebug = 3;                                // Enable verbose debug output
   $mailUs->isSMTP();                                      // Set mailer to use SMTP
   $mailUs->Host = $email_smtp;                            // Specify main and backup SMTP servers
   $mailUs->SMTPAuth = true;                               // Enable SMTP authentication
   $mailUs->Username = $email_user;                        // SMTP username
-  $mailUs->Password = $email_pass;                        // SMTP password
+  $mailUs->Password = base64_decode($email_pass);         // SMTP password
   $mailUs->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
   $mailUs->Port = 587;                                    // TCP port to connect to
   $mailUs->CharSet = 'UTF-8';                             // Set compatible charset
