@@ -78,7 +78,7 @@ try {
   $mailClient->Host = $email_smtp;                          // Specify main and backup SMTP servers
   $mailClient->SMTPAuth = true;                             // Enable SMTP authentication
   $mailClient->Username = $email_user;                      // SMTP username
-  $mailClient->Password = $email_pass;                      // SMTP password
+  $mailClient->Password = base64_decode($email_pass);       // SMTP password
   $mailClient->SMTPSecure = 'tls';                          // Enable TLS encryption, `ssl` also accepted
   $mailClient->Port = 587;                                  // TCP port to connect to
   $mailClient->CharSet = 'UTF-8';                           // Set compatible charset
